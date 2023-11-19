@@ -1,4 +1,9 @@
-import { generateInvoice, generateInvoiceXml, signXml } from "open-factura";
+import {
+  generateInvoice,
+  generateInvoiceXml,
+  getP12FromUrl,
+  signXml,
+} from "open-factura";
 
 const invoice = generateInvoice({
   infoTributaria: {
@@ -310,10 +315,10 @@ const invoice = generateInvoice({
 
 const invoiceXml = generateInvoiceXml(invoice);
 
-const sign: ArrayBuffer = new ArrayBuffer(16);
-const password = "pass";
+const signature: ArrayBuffer = await getP12FromUrl("yoururl");
+const password = "yourpassword";
 
-const signedInvoice = await signXml(sign, password, invoiceXml);
+const signedInvoice = await signXml(signature, password, invoiceXml);
 
 console.log(invoice);
 console.log(invoiceXml);

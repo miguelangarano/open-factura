@@ -20,7 +20,7 @@ export type GenerateAccessKey = {
 
 export function generateAccessKey(accessKeyData: GenerateAccessKey) {
   let accessKey = "";
-  accessKey += accessKeyData.date; // Fecha de emisión
+  accessKey += formatDateToDDMMYYYY(accessKeyData.date); // Fecha de emisión
   accessKey += accessKeyData.codDoc; // Tipo de comprobante
   accessKey += accessKeyData.ruc; // Número de RUC
   accessKey += accessKeyData.environment; // Tipo de ambiente
@@ -31,6 +31,18 @@ export function generateAccessKey(accessKeyData: GenerateAccessKey) {
   accessKey += "1"; // Tipo de emisión
   accessKey += generateVerificatorDigit(accessKey); // Dígito verificador
   return accessKey;
+}
+
+function formatDateToDDMMYYYY(date: Date) {
+  let day = date.getDate();
+  let month = date.getMonth() + 1; // getMonth() returns 0-11
+  let year = date.getFullYear();
+
+  // Pad day and month with a leading zero if they are less than 10
+  const finalDay = day < 10 ? "0" + day : day;
+  const finalMonth = month < 10 ? "0" + month : month;
+
+  return `${finalDay}${finalMonth}${year}`;
 }
 
 function generateRandomEightDigitNumber(): number {
