@@ -1,17 +1,14 @@
 import { create } from "xmlbuilder2";
-import {
-  RestaurantInvoice,
-  RestaurantInvoiceInput,
-} from "../baseData/restaurantInvoice/invoice";
+import { Invoice, InvoiceInput } from "../baseData/invoice/invoice";
 import { generateAccessKey } from "../utils/utils";
 
-export function generateInvoiceXml(invoice: RestaurantInvoice) {
+export function generateInvoiceXml(invoice: Invoice) {
   const document = create(invoice);
   const xml = document.end({ prettyPrint: true });
   return xml;
 }
 
-export function generateInvoice(invoiceData: RestaurantInvoiceInput) {
+export function generateInvoice(invoiceData: InvoiceInput) {
   const keyAccess = generateAccessKey({
     date: new Date(invoiceData.infoFactura.fechaEmision),
     codDoc: invoiceData.infoTributaria.codDoc,
@@ -22,7 +19,7 @@ export function generateInvoice(invoiceData: RestaurantInvoiceInput) {
     sequential: invoiceData.infoTributaria.secuencial,
   });
 
-  const invoice: RestaurantInvoice = {
+  const invoice: Invoice = {
     factura: {
       "@xmlns:ds": "http://www.w3.org/2000/09/xmldsig#",
       "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",

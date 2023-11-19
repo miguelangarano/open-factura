@@ -1,6 +1,8 @@
 {
   "name": "open-factura",
+  "version": "0.0.1",
   "module": "index.ts",
+  "main": "index.ts",
   "type": "module",
   "devDependencies": {
     "bun-types": "latest"

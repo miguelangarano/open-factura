@@ -38,6 +38,25 @@ export type Invoice = {
   };
 };
 
+export type InvoiceInput = {
+  infoTributaria: Omit<TaxInfo, "claveAcceso">;
+  infoFactura: InvoiceInfo;
+  detalles: Details;
+  reembolsos?: Reimbursements;
+  retenciones?: Retentions;
+  infoSustitutivaGuiaRemision?: RemisionGuideSustitutiveInfo;
+  otrosRubrosTerceros?: OtherThirdPartyValues;
+  tipoNegociable?: {
+    correo: string;
+  };
+  maquinaFiscal?: {
+    marca: string;
+    modelo: string;
+    serie: string;
+  };
+  infoAdicional?: AdditionalInfo;
+};
+
 export const invoice = {
   factura: {
     "@xmlns:ds": "http://www.w3.org/2000/09/xmldsig#",
