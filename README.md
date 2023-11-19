@@ -1,5 +1,7 @@
 # open-factura
 
+![Facturación electrónica SRI Ecuador](https://github.com/miguelangarano/open-factura/assets/26367577/75a941b0-dace-4047-91e4-6d0d433dfd39)
+
 Open Factura es un proyecto opensource de facturación electrónica para Ecuador compatible con la ficha técnica para comprobantes electrónicos emitido por el SRI.
 
 Está publicada como [librería en npm](https://www.npmjs.com/package/open-factura) y la puedes utilizar simplemente instalandola como dependencia en tu proyecto de Node o Bun.
