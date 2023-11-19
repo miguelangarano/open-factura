@@ -4,7 +4,13 @@ export {
   generateInvoiceXml,
 } from "./services/generateInvoice";
 export { documentReception } from "./services/reception";
-export { signXml } from "./services/signing";
+export {
+  signXml,
+  getP12FromLocalFile,
+  getP12FromUrl,
+  getXMLFromLocalFile,
+  getXMLFromLocalUrl,
+} from "./services/signing";
 export {
   AdditionalInfo,
   AdditionalField,

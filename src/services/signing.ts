@@ -1,7 +1,8 @@
 import * as forge from "node-forge";
 import { readFileSync } from "fs";
+import fetch from "node-fetch";
 
-async function getP12(path: string) {
+export function getP12FromLocalFile(path: string) {
   const file = readFileSync(path);
   const buffer = file.buffer.slice(
     file.byteOffset,
@@ -10,8 +11,22 @@ async function getP12(path: string) {
   return buffer;
 }
 
-async function getXML(path: string) {
+export async function getP12FromUrl(url: string) {
+  const file = await fetch(url)
+    .then((response) => response.arrayBuffer())
+    .then((data) => data);
+  return file;
+}
+
+export function getXMLFromLocalFile(path: string) {
   const file = readFileSync(path, "utf8");
+  return file;
+}
+
+export async function getXMLFromLocalUrl(url: string) {
+  const file = await fetch(url)
+    .then((response) => response.text())
+    .then((data) => data);
   return file;
 }
 
@@ -45,12 +60,12 @@ function getRandomNumber(min = 990, max = 9999) {
 }
 
 export async function signXml(
-  p12Path: string,
+  p12Data: ArrayBuffer,
   p12Password: string,
-  xmlPath: string
+  xmlData: string
 ) {
-  const arrayBuffer = await getP12(p12Path);
-  let xml = await getXML(xmlPath);
+  const arrayBuffer = p12Data;
+  let xml = xmlData;
   xml = xml.replace(/\s+/g, " ");
   xml = xml.trim();
   xml = xml.replace(/(?<=\>)(\r?\n)|(\r?\n)(?=\<\/)/g, "");
