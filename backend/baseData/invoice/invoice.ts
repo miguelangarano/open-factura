@@ -17,7 +17,6 @@ export type Invoice = {
   factura: {
     "@xmlns:ds": string;
     "@xmlns:xsi": string;
-    "@xsi:noNamespaceSchemaLocation": string;
     "@id": string;
     "@version": string;
     infoTributaria: TaxInfo;
@@ -43,8 +42,6 @@ export const invoice = {
   factura: {
     "@xmlns:ds": "http://www.w3.org/2000/09/xmldsig#",
     "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
-    "@xsi:noNamespaceSchemaLocation":
-      "file:/C:/borrar/xsd/111-xsd-1_V2.1.0.xsd",
     "@id": "comprobante",
     "@version": "version0",
     infoTributaria: taxInfo,

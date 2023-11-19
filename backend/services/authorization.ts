@@ -1,6 +1,6 @@
 import soap from "soap";
 
-export async function documentAuthorization(accesKey: string, ruc: string) {
+export async function documentAuthorization(accesKey: string) {
   let params = { claveAccesoComprobante: accesKey };
 
   let authorizationResponse: any;

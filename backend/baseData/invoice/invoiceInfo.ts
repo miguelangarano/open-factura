@@ -2,7 +2,7 @@ export type InvoiceInfo = {
   fechaEmision: string;
   dirEstablecimiento: string;
   contribuyenteEspecial?: string;
-  obligadoContabilidad: string;
+  obligadoContabilidad: "SI" | "NO";
   comercioExterior?: string;
   incoTermFactura?: string;
   lugarIncoTerm?: string;
@@ -11,13 +11,20 @@ export type InvoiceInfo = {
   puertoDestino?: string;
   paisDestino?: string;
   paisAdquisicion?: string;
-  tipoIdentificacionComprador: string;
+  /*
+  RUC 04
+  CÉDULA 05
+  PASAPORTE 06
+  VENTA A CONSUMIDOR FINAL* 07
+  IDENTIFICACIÓN DELEXTERIOR* 08
+  */
+  tipoIdentificacionComprador: "04" | "05" | "06" | "07" | "08";
   guiaRemision?: string;
   razonSocialComprador: string;
   identificacionComprador: string;
   direccionComprador: string;
   totalSinImpuestos: string;
-  totalSubsidio: string;
+  totalSubsidio?: string;
   incoTermTotalSinImpuestos?: string;
   totalDescuento: string;
   codDocReembolso?: string;
@@ -35,18 +42,34 @@ export type InvoiceInfo = {
   moneda: string;
   placa?: string;
   pagos: Payments;
-  valorRetIva: string;
-  valorRetRenta: string;
+  valorRetIva?: string;
+  valorRetRenta?: string;
 };
 
 export type TotalWithTax = {
-  codigo: string;
-  codigoPorcentaje: string;
+  /*
+  IVA 2
+  ICE 3
+  IRBPNR 5
+  */
+  codigo: "2" | "3" | "5";
+  /*
+  IVA
+  0% 0
+  12% 2
+  14% 3
+  No Objeto de Impuesto 6
+  Exento de IVA 7
+  IVA diferenciado4 8
+
+  ICE - Ver tabla 18 de la ficha tecnica de comprobantes electronicos
+  */
+  codigoPorcentaje: "0" | "2" | "3" | "6" | "7" | "8";
   descuentoAdicional: string;
   baseImponible: string;
-  tarifa: string;
+  tarifa?: string;
   valor: string;
-  valorDevolucionIva: string;
+  valorDevolucionIva?: string;
 };
 
 export type TotalWithTaxes = {
