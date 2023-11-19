@@ -1,6 +1,6 @@
 {
   "name": "open-factura",
-  "version": "0.0.3",
+  "version": "0.0.7",
   "author": {
     "name": "Miguel Langarano"
   },
@@ -17,7 +17,7 @@
   "scripts": {
     "build": "tsup",
     "start": "tsc ./src/index.ts",
-    "publish": "npm build & npm link & npm link open-factura & npm publish"
+    "publish-changes": "npm run build & npm link & npm link open-factura & npm publish"
   },
   "devDependencies": {
     "bun-types": "latest",
