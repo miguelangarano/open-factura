@@ -1,11 +1,25 @@
 {
   "name": "open-factura",
   "version": "0.0.1",
-  "module": "index.ts",
-  "main": "index.ts",
-  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/miguelangarano/open-factura.git"
+  },
+  "scripts": {
+    "build": "tsup",
+    "start": "tsc ./src/index.ts"
+  },
   "devDependencies": {
-    "bun-types": "latest"
+    "bun-types": "latest",
+    "ts-node": "^10.9.1",
+    "tsup": "^7.3.0",
+    "typescript": "^5.2.2"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"

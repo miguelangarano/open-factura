@@ -1,18 +1,21 @@
-import forge, { Encoding } from "node-forge";
+import * as forge from "node-forge";
+import { readFileSync } from "fs";
 
 async function getP12(path: string) {
-  const file = Bun.file(path);
-  const buffer = file.arrayBuffer();
+  const file = readFileSync(path);
+  const buffer = file.buffer.slice(
+    file.byteOffset,
+    file.byteOffset + file.byteLength
+  );
   return buffer;
 }
 
 async function getXML(path: string) {
-  const file = Bun.file(path);
-  const buffer = file.text();
-  return buffer;
+  const file = readFileSync(path, "utf8");
+  return file;
 }
 
-function sha1Base64(text: string, encoding: Encoding = "utf8") {
+function sha1Base64(text: string, encoding: forge.Encoding = "utf8") {
   let md = forge.md.sha1.create();
   md.update(text, encoding);
   const hash = md.digest().toHex();

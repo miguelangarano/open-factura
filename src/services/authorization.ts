@@ -1,4 +1,4 @@
-import soap from "soap";
+import { createClient, Client } from "soap";
 
 export async function documentAuthorization(
   accesKey: string,
@@ -9,7 +9,7 @@ export async function documentAuthorization(
   let authorizationResponse: any;
 
   const authorizationRequest = new Promise((resolve, reject) => {
-    soap.createClient(authorizationUrl, (err: any, client: soap.Client) => {
+    createClient(authorizationUrl, (err: any, client: Client) => {
       client.autorizacionComprobante(params, (err: any, result: unknown) => {
         if (err) {
           reject(err);

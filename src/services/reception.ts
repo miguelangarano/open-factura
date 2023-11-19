@@ -1,4 +1,4 @@
-import soap from "soap";
+import { createClient, Client } from "soap";
 
 export async function documentReception(
   stringXML: string,
@@ -10,7 +10,7 @@ export async function documentReception(
   let receptionResult: any;
 
   const receptionRequest = new Promise((resolve, reject) => {
-    soap.createClient(receptionUrl, (err, client: soap.Client) => {
+    createClient(receptionUrl, (err, client: Client) => {
       if (err) {
         reject(err);
         return;
