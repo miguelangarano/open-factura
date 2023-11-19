@@ -1,6 +1,6 @@
-import { generateInvoice } from "open-factura";
+import { generateInvoice, generateInvoiceXml, signXml } from "open-factura";
 
-const inv = generateInvoice({
+const invoice = generateInvoice({
   infoTributaria: {
     ambiente: "1",
     tipoEmision: "1",
@@ -308,4 +308,13 @@ const inv = generateInvoice({
   },
 });
 
-console.log(inv);
+const invoiceXml = generateInvoiceXml(invoice);
+
+const sign: ArrayBuffer = new ArrayBuffer(16);
+const password = "pass";
+
+const signedInvoice = await signXml(sign, password, invoiceXml);
+
+console.log(invoice);
+console.log(invoiceXml);
+console.log(signedInvoice);

@@ -1,0 +1,178 @@
+{
+  "factura": {
+    "@xmlns:ds": "http://www.w3.org/2000/09/xmldsig#",
+    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "@id": "comprobante",
+    "@version": "1.0.0",
+    "infoTributaria": {
+      "ambiente": "1",
+      "tipoEmision": "1",
+      "razonSocial": "razonSocial0",
+      "nombreComercial": "nombreComercial0",
+      "ruc": "0000000000001",
+      "codDoc": "01",
+      "estab": "000",
+      "ptoEmi": "000",
+      "secuencial": "000000000",
+      "dirMatriz": "dirMatriz0",
+      "agenteRetencion": "0",
+      "contribuyenteRimpe": "CONTRIBUYENTE RÉGIMEN RIMPE",
+      "claveAcceso": "Sat Jan 01 2000 00:00:00 GMT-0500 (Ecuador Time)0100000000000011000000000000000620270241NaN"
+    },
+    "infoFactura": {
+      "fechaEmision": "01/01/2000",
+      "dirEstablecimiento": "dirEstablecimiento0",
+      "contribuyenteEspecial": "contribuyente",
+      "obligadoContabilidad": "SI",
+      "comercioExterior": "EXPORTADOR",
+      "incoTermFactura": "A",
+      "lugarIncoTerm": "lugarIncoTerm0",
+      "paisOrigen": "000",
+      "puertoEmbarque": "puertoEmbarque0",
+      "puertoDestino": "puertoDestino0",
+      "paisDestino": "000",
+      "paisAdquisicion": "000",
+      "tipoIdentificacionComprador": "04",
+      "guiaRemision": "000-000-000000000",
+      "razonSocialComprador": "razonSocialComprador0",
+      "identificacionComprador": "identificacionComprador0",
+      "direccionComprador": "direccionComprador0",
+      "totalSinImpuestos": "50.00",
+      "totalSubsidio": "50.00",
+      "incoTermTotalSinImpuestos": "A",
+      "totalDescuento": "0.00",
+      "codDocReembolso": "00",
+      "totalComprobantesReembolso": "50.00",
+      "totalBaseImponibleReembolso": "50.00",
+      "totalImpuestoReembolso": "50.00",
+      "totalConImpuestos": {
+        "totalImpuesto": [
+          {
+            "codigo": "2",
+            "codigoPorcentaje": "0",
+            "descuentoAdicional": "0.00",
+            "baseImponible": "50.00",
+            "tarifa": "49.50",
+            "valor": "50.00",
+            "valorDevolucionIva": "50.00"
+          },
+          {
+            "codigo": "2",
+            "codigoPorcentaje": "0",
+            "descuentoAdicional": "0.00",
+            "baseImponible": "50.00",
+            "tarifa": "49.50",
+            "valor": "50.00",
+            "valorDevolucionIva": "50.00"
+          }
+        ]
+      },
+      "compensaciones": {
+        "compensacion": [
+          { "codigo": "1", "tarifa": "49.50", "valor": "50.00" },
+          { "codigo": "1", "tarifa": "49.50", "valor": "50.00" }
+        ]
+      },
+      "propina": "50.00",
+      "fleteInternacional": "50.00",
+      "seguroInternacional": "50.00",
+      "gastosAduaneros": "50.00",
+      "gastosTransporteOtros": "50.00",
+      "importeTotal": "50.00",
+      "moneda": "moneda0",
+      "placa": "placa0",
+      "pagos": {
+        "pago": [
+          {
+            "formaPago": "01",
+            "total": "50.00",
+            "plazo": "50.00",
+            "unidadTiempo": "unidadTiempo"
+          },
+          {
+            "formaPago": "01",
+            "total": "50.00",
+            "plazo": "50.00",
+            "unidadTiempo": "unidadTiempo"
+          }
+        ]
+      },
+      "valorRetIva": "50.00",
+      "valorRetRenta": "50.00"
+    },
+    "detalles": {
+      "detalle": [
+        {
+          "codigoPrincipal": "codigoPrincipal0",
+          "codigoAuxiliar": "codigoAuxiliar0",
+          "descripcion": "descripcion0",
+          "unidadMedida": "unidadMedida0",
+          "cantidad": "50.000000",
+          "precioUnitario": "50.000000",
+          "precioSinSubsidio": "50.000000",
+          "descuento": "50.00",
+          "precioTotalSinImpuesto": "50.00",
+          "detallesAdicionales": {
+            "detAdicional": [
+              { "@nombre": "nombre0", "@valor": "valor0" },
+              { "@nombre": "nombre1", "@valor": "valor1" }
+            ]
+          },
+          "impuestos": {
+            "impuesto": [
+              {
+                "codigo": "2",
+                "codigoPorcentaje": "0",
+                "tarifa": "49.50",
+                "baseImponible": "50.00",
+                "valor": "50.00"
+              },
+              {
+                "codigo": "2",
+                "codigoPorcentaje": "0",
+                "tarifa": "49.50",
+                "baseImponible": "50.00",
+                "valor": "50.00"
+              }
+            ]
+          }
+        },
+        {
+          "codigoPrincipal": "codigoPrincipal1",
+          "codigoAuxiliar": "codigoAuxiliar1",
+          "descripcion": "descripcion1",
+          "unidadMedida": "unidadMedida1",
+          "cantidad": "50.000000",
+          "precioUnitario": "50.000000",
+          "precioSinSubsidio": "50.000000",
+          "descuento": "50.00",
+          "precioTotalSinImpuesto": "50.00",
+          "detallesAdicionales": {
+            "detAdicional": [
+              { "@nombre": "nombre0", "@valor": "valor0" },
+              { "@nombre": "nombre1", "@valor": "valor1" }
+            ]
+          },
+          "impuestos": {
+            "impuesto": [
+              {
+                "codigo": "2",
+                "codigoPorcentaje": "0",
+                "tarifa": "49.50",
+                "baseImponible": "50.00",
+                "valor": "50.00"
+              },
+              {
+                "codigo": "2",
+                "codigoPorcentaje": "0",
+                "tarifa": "49.50",
+                "baseImponible": "50.00",
+                "valor": "50.00"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

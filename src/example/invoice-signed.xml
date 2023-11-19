@@ -1,0 +1,298 @@
+<?xml version="1.0"?>
+<factura xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="comprobante" version="1.0.0">
+    <infoTributaria>
+        <ambiente>1</ambiente>
+        <tipoEmision>1</tipoEmision>
+        <razonSocial>razonSocial0</razonSocial>
+        <nombreComercial>nombreComercial0</nombreComercial>
+        <ruc>0000000000001</ruc>
+        <codDoc>01</codDoc>
+        <estab>000</estab>
+        <ptoEmi>000</ptoEmi>
+        <secuencial>000000000</secuencial>
+        <dirMatriz>dirMatriz0</dirMatriz>
+        <agenteRetencion>0</agenteRetencion>
+        <contribuyenteRimpe>CONTRIBUYENTE RÉGIMEN RIMPE</contribuyenteRimpe>
+        <claveAcceso>Sat Jan 01 2000 00:00:00 GMT-0500 (Ecuador
+            Time)0100000000000011000000000000000777610221NaN</claveAcceso>
+    </infoTributaria>
+    <infoFactura>
+        <fechaEmision>01/01/2000</fechaEmision>
+        <dirEstablecimiento>dirEstablecimiento0</dirEstablecimiento>
+        <contribuyenteEspecial>contribuyente</contribuyenteEspecial>
+        <obligadoContabilidad>SI</obligadoContabilidad>
+        <comercioExterior>EXPORTADOR</comercioExterior>
+        <incoTermFactura>A</incoTermFactura>
+        <lugarIncoTerm>lugarIncoTerm0</lugarIncoTerm>
+        <paisOrigen>000</paisOrigen>
+        <puertoEmbarque>puertoEmbarque0</puertoEmbarque>
+        <puertoDestino>puertoDestino0</puertoDestino>
+        <paisDestino>000</paisDestino>
+        <paisAdquisicion>000</paisAdquisicion>
+        <tipoIdentificacionComprador>04</tipoIdentificacionComprador>
+        <guiaRemision>000-000-000000000</guiaRemision>
+        <razonSocialComprador>razonSocialComprador0</razonSocialComprador>
+        <identificacionComprador>identificacionComprador0</identificacionComprador>
+        <direccionComprador>direccionComprador0</direccionComprador>
+        <totalSinImpuestos>50.00</totalSinImpuestos>
+        <totalSubsidio>50.00</totalSubsidio>
+        <incoTermTotalSinImpuestos>A</incoTermTotalSinImpuestos>
+        <totalDescuento>0.00</totalDescuento>
+        <codDocReembolso>00</codDocReembolso>
+        <totalComprobantesReembolso>50.00</totalComprobantesReembolso>
+        <totalBaseImponibleReembolso>50.00</totalBaseImponibleReembolso>
+        <totalImpuestoReembolso>50.00</totalImpuestoReembolso>
+        <totalConImpuestos>
+            <totalImpuesto>
+                <codigo>2</codigo>
+                <codigoPorcentaje>0</codigoPorcentaje>
+                <descuentoAdicional>0.00</descuentoAdicional>
+                <baseImponible>50.00</baseImponible>
+                <tarifa>49.50</tarifa>
+                <valor>50.00</valor>
+                <valorDevolucionIva>50.00</valorDevolucionIva>
+            </totalImpuesto>
+            <totalImpuesto>
+                <codigo>2</codigo>
+                <codigoPorcentaje>0</codigoPorcentaje>
+                <descuentoAdicional>0.00</descuentoAdicional>
+                <baseImponible>50.00</baseImponible>
+                <tarifa>49.50</tarifa>
+                <valor>50.00</valor>
+                <valorDevolucionIva>50.00</valorDevolucionIva>
+            </totalImpuesto>
+        </totalConImpuestos>
+        <compensaciones>
+            <compensacion>
+                <codigo>1</codigo>
+                <tarifa>49.50</tarifa>
+                <valor>50.00</valor>
+            </compensacion>
+            <compensacion>
+                <codigo>1</codigo>
+                <tarifa>49.50</tarifa>
+                <valor>50.00</valor>
+            </compensacion>
+        </compensaciones>
+        <propina>50.00</propina>
+        <fleteInternacional>50.00</fleteInternacional>
+        <seguroInternacional>50.00</seguroInternacional>
+        <gastosAduaneros>50.00</gastosAduaneros>
+        <gastosTransporteOtros>50.00</gastosTransporteOtros>
+        <importeTotal>50.00</importeTotal>
+        <moneda>moneda0</moneda>
+        <placa>placa0</placa>
+        <pagos>
+            <pago>
+                <formaPago>01</formaPago>
+                <total>50.00</total>
+                <plazo>50.00</plazo>
+                <unidadTiempo>unidadTiempo</unidadTiempo>
+            </pago>
+            <pago>
+                <formaPago>01</formaPago>
+                <total>50.00</total>
+                <plazo>50.00</plazo>
+                <unidadTiempo>unidadTiempo</unidadTiempo>
+            </pago>
+        </pagos>
+        <valorRetIva>50.00</valorRetIva>
+        <valorRetRenta>50.00</valorRetRenta>
+    </infoFactura>
+    <detalles>
+        <detalle>
+            <codigoPrincipal>codigoPrincipal0</codigoPrincipal>
+            <codigoAuxiliar>codigoAuxiliar0</codigoAuxiliar>
+            <descripcion>descripcion0</descripcion>
+            <unidadMedida>unidadMedida0</unidadMedida>
+            <cantidad>50.000000</cantidad>
+            <precioUnitario>50.000000</precioUnitario>
+            <precioSinSubsidio>50.000000</precioSinSubsidio>
+            <descuento>50.00</descuento>
+            <precioTotalSinImpuesto>50.00</precioTotalSinImpuesto>
+            <detallesAdicionales>
+                <detAdicional nombre="nombre0" valor="valor0" />
+                <detAdicional nombre="nombre1" valor="valor1" />
+            </detallesAdicionales>
+            <impuestos>
+                <impuesto>
+                    <codigo>2</codigo>
+                    <codigoPorcentaje>0</codigoPorcentaje>
+                    <tarifa>49.50</tarifa>
+                    <baseImponible>50.00</baseImponible>
+                    <valor>50.00</valor>
+                </impuesto>
+                <impuesto>
+                    <codigo>2</codigo>
+                    <codigoPorcentaje>0</codigoPorcentaje>
+                    <tarifa>49.50</tarifa>
+                    <baseImponible>50.00</baseImponible>
+                    <valor>50.00</valor>
+                </impuesto>
+            </impuestos>
+        </detalle>
+        <detalle>
+            <codigoPrincipal>codigoPrincipal1</codigoPrincipal>
+            <codigoAuxiliar>codigoAuxiliar1</codigoAuxiliar>
+            <descripcion>descripcion1</descripcion>
+            <unidadMedida>unidadMedida1</unidadMedida>
+            <cantidad>50.000000</cantidad>
+            <precioUnitario>50.000000</precioUnitario>
+            <precioSinSubsidio>50.000000</precioSinSubsidio>
+            <descuento>50.00</descuento>
+            <precioTotalSinImpuesto>50.00</precioTotalSinImpuesto>
+            <detallesAdicionales>
+                <detAdicional nombre="nombre0" valor="valor0" />
+                <detAdicional nombre="nombre1" valor="valor1" />
+            </detallesAdicionales>
+            <impuestos>
+                <impuesto>
+                    <codigo>2</codigo>
+                    <codigoPorcentaje>0</codigoPorcentaje>
+                    <tarifa>49.50</tarifa>
+                    <baseImponible>50.00</baseImponible>
+                    <valor>50.00</valor>
+                </impuesto>
+                <impuesto>
+                    <codigo>2</codigo>
+                    <codigoPorcentaje>0</codigoPorcentaje>
+                    <tarifa>49.50</tarifa>
+                    <baseImponible>50.00</baseImponible>
+                    <valor>50.00</valor>
+                </impuesto>
+            </impuestos>
+        </detalle>
+    </detalles>
+    <ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldisg#"
+        xmlns:etsi="http://uri.etsi.org/01903/v1.3.2#" Id="Signature4592">
+        <ds:SignedInfo Id="Signature-SignedInfo3432">
+            <ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"></ds:CanonicalizationMethod>
+            <ds:SignatureMethod Algorith="http://www.w3.org/2000/09/xmldsig#rsa-sha1"></ds:SignatureMethod>
+            <ds:Reference Id="SignedPropertiesID6943"
+                Type="http://uri.etsi.org/01903#SignedProperties"
+                URI="#Signature4592-SignedProperties2528">
+                <ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod>
+                <ds:DigestValue>zfyjLog+VD58wdfb12zDfeqEqRU=</ds:DigestValue>
+            </ds:Reference>
+            <ds:Reference URI="#Certificate9575">
+                <ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod>
+                <ds:DigestValue>XrCTESKuFJDnGG7G/kIBNcB+CyI=</ds:DigestValue>
+            </ds:Reference>
+            <ds:Reference Id="Reference-ID2204" URI="#comprobante">
+                <ds:Transforms>
+                    <ds:Transform Algorithm="http://www.w3.org/2000/09/xmlndsig#enveloped-signature"></ds:Transform>
+                </ds:Transforms>
+                <ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod>
+                <ds:DigestValue>R6hjQUG8FlRbdLi+I2uoyFDG4bk=</ds:DigestValue>
+            </ds:Reference>
+        </ds:SignedInfo>
+        <ds:SignatureValue Id="SignatureValue4461">
+            O2FR6IuTBWGsOBJVsmsrT4QEjUYW8aqOtePwllcMAd6iHBuPxuM1Nc+uyqgYRuocf441DwF8l3Wxhhrp5MMr/WBcjvELWkQiegeUJQqEB/smL/UYFYOsb4r4l3soALo+qpNmZ2G3dzlOOSRX8dz3TCKayqnApzg39eGhY0fgqIL5v+2775jdhbdmywPTcF5aP17tjXxljjt1CiuXeffWcNOgpe16GvxnmYVSs6wtorjXgGPANG3y0mFD+kxw5yl3OvIuTgZrx/PZZhjYNCoMoHrcui/VR0bFOUK+smkp2jaPyolLqs4KMZZbnuMx8WKnSThinHmffX4KoTjOgkA5SevTQg==
+</ds:SignatureValue>
+        <ds:KeyInfo Id="Certificate9575">
+            <ds:X509Data>
+                <ds:X509Certificate>
+                    MIIL4TCCCcmgAwIBAgIEFHg2DjANBgkqhkiG9w0BAQsFADCBmTELMAkGA1UEBhMCRUMxHTAbBgNV
+                    BAoMFFNFQ1VSSVRZIERBVEEgUy5BLiAyMTAwLgYDVQQLDCdFTlRJREFEIERFIENFUlRJRklDQUNJ
+                    T04gREUgSU5GT1JNQUNJT04xOTA3BgNVBAMMMEFVVE9SSURBRCBERSBDRVJUSUZJQ0FDSU9OIFNV
+                    QkNBLTIgU0VDVVJJVFkgREFUQTAeFw0yMjA3MjUxMzE1NTFaFw0yNDA3MjQxMzE1NTFaMIGhMSow
+                    KAYDVQQDDCFNSUdVRUwgRURVQVJETyBMQU5HQVJBTk8gR1VFUlJFUk8xFTATBgNVBAUTDDI1MDcy
+                    MjA4MjUzNzEwMC4GA1UECwwnRU5USURBRCBERSBDRVJUSUZJQ0FDSU9OIERFIElORk9STUFDSU9O
+                    MR0wGwYDVQQKDBRTRUNVUklUWSBEQVRBIFMuQS4gMjELMAkGA1UEBhMCRUMwggEiMA0GCSqGSIb3
+                    DQEBAQUAA4IBDwAwggEKAoIBAQCQNSDam1+pMCnIo/OCHAjlV8BzIaYFIN34BvPakOpWREZrT4Ff
+                    r6YiSoSOkhIO4u7rhsbT33Pz7n+lhVeLzMq1eknpsyMkQ5cJgpXMu0wCiz1SVK9kis/tJeknRGox
+                    MG+Fti+SSWcQpxcjAnIgyeIS5nC+HmfyBQrvJFZ61ntazk1DLeTqBmf9hQuyyq0lIP+zjqfPFJ1M
+                    9irgLBb2PE8Qthghs2jhEFM+3ajRoC9p93+UbebN84HQpMw/qXXXsDmT7O2NLpSQ1jsWv2mOtwcI
+                    7x0sqyxgw28NnZ2m6I3BCLOKfqxZXIq59d2rRzrolMh1cNCKyVIXYwj2hWYaiRApAgMBAAGjggcl
+                    MIIHITAMBgNVHRMBAf8EAjAAMB8GA1UdIwQYMBaAFIy6yhFXeCWAHWsKS1W/ja5i3b2PMFkGCCsG
+                    AQUFBwEBBE0wSzBJBggrBgEFBQcwAYY9aHR0cDovL29jc3Bndy5zZWN1cml0eWRhdGEubmV0LmVj
+                    L2VqYmNhL3B1YmxpY3dlYi9zdGF0dXMvb2NzcDCBzwYDVR0uBIHHMIHEMIHBoIG+oIG7hoG4bGRh
+                    cDovL2xkYXBzZGNhMi5zZWN1cml0eWRhdGEubmV0LmVjL0NOPUFVVE9SSURBRCBERSBDRVJUSUZJ
+                    Q0FDSU9OIFNVQkNBLTIgU0VDVVJJVFkgREFUQSxPVT1FTlRJREFEIERFIENFUlRJRklDQUNJT04g
+                    REUgSU5GT1JNQUNJT04sTz1TRUNVUklUWSBEQVRBIFMuQS4gMixDPUVDP2RlbHRhUmV2b2NhdGlv
+                    bkxpc3Q/YmFzZTAjBgNVHREEHDAagRhtaWd1ZWxhbmdhcmFub0BnbWFpbC5jb20wggEGBgNVHSAE
+                    gf4wgfswWgYKKwYBBAGCpnICBzBMMEoGCCsGAQUFBwICMD4ePABDAGUAcgB0AGkAZgBpAGMAYQBk
+                    AG8AIABkAGUAIABQAGUAcgBzAG8AbgBhACAATgBhAHQAdQByAGEAbDCBnAYKKwYBBAGCpnICATCB
+                    jTCBigYIKwYBBQUHAgEWfmh0dHBzOi8vd3d3LnNlY3VyaXR5ZGF0YS5uZXQuZWMvd3AtY29udGVu
+                    dC9kb3dubG9hZHMvTm9ybWF0aXZhcy9QX2RlX0NlcnRpZmljYWRvcy9Qb2xpdGljYXMgZGUgQ2Vy
+                    dGlmaWNhZG8gUGVyc29uYSBOYXR1cmFsLnBkZjCCAqIGA1UdHwSCApkwggKVMIHloEGgP4Y9aHR0
+                    cDovL29jc3Bndy5zZWN1cml0eWRhdGEubmV0LmVjL2VqYmNhL3B1YmxpY3dlYi9zdGF0dXMvb2Nz
+                    cKKBn6SBnDCBmTE5MDcGA1UEAwwwQVVUT1JJREFEIERFIENFUlRJRklDQUNJT04gU1VCQ0EtMiBT
+                    RUNVUklUWSBEQVRBMTAwLgYDVQQLDCdFTlRJREFEIERFIENFUlRJRklDQUNJT04gREUgSU5GT1JN
+                    QUNJT04xHTAbBgNVBAoMFFNFQ1VSSVRZIERBVEEgUy5BLiAyMQswCQYDVQQGEwJFQzCBx6CBxKCB
+                    wYaBvmxkYXA6Ly9sZGFwc2RjYTIuc2VjdXJpdHlkYXRhLm5ldC5lYy9DTj1BVVRPUklEQUQgREUg
+                    Q0VSVElGSUNBQ0lPTiBTVUJDQS0yIFNFQ1VSSVRZIERBVEEsT1U9RU5USURBRCBERSBDRVJUSUZJ
+                    Q0FDSU9OIERFIElORk9STUFDSU9OLE89U0VDVVJJVFkgREFUQSBTLkEuIDIsQz1FQz9jZXJ0aWZp
+                    Y2F0ZVJldm9jYXRpb25MaXN0P2Jhc2UwgeCggd2ggdqGgddodHRwczovL3BvcnRhbC1vcGVyYWRv
+                    cjIuc2VjdXJpdHlkYXRhLm5ldC5lYy9lamJjYS9wdWJsaWN3ZWIvd2ViZGlzdC9jZXJ0ZGlzdD9j
+                    bWQ9Y3JsJmlzc3Vlcj1DTj1BVVRPUklEQUQgREUgQ0VSVElGSUNBQ0lPTiBTVUJDQS0yIFNFQ1VS
+                    SVRZIERBVEEsT1U9RU5USURBRCBERSBDRVJUSUZJQ0FDSU9OIERFIElORk9STUFDSU9OLE89U0VD
+                    VVJJVFkgREFUQSBTLkEuIDIsQz1FQzAdBgNVHQ4EFgQUoR4WBkbQXeLM21KalF2w7oF8RPEwKwYD
+                    VR0QBCQwIoAPMjAyMjA3MjUxMzE1NTFagQ8yMDI0MDcyNDEzMTU1MVowCwYDVR0PBAQDAgXgMBoG
+                    CisGAQQBgqZyAwEEDAwKMDUwNDEzODkzNDAZBgorBgEEAYKmcgMJBAsMCUxBVEFDVU5HQTARBgor
+                    BgEEAYKmcgMiBAMMAS4wMwYKKwYBBAGCpnIDBwQlDCNBVi4gQVRBSFVBTFBBIFMgTiBZIFVOSURB
+                    RCBOQUNJT05BTDAeBgorBgEEAYKmcgMCBBAMDk1JR1VFTCBFRFVBUkRPMB8GCisGAQQBgqZyAyAE
+                    EQwPMDAyMDAxMDAwMzkxNzkwMBEGCisGAQQBgqZyAyMEAwwBLjATBgorBgEEAYKmcgMhBAUMA1BG
+                    WDAXBgorBgEEAYKmcgMMBAkMB0VDVUFET1IwGQYKKwYBBAGCpnIDAwQLDAlMQU5HQVJBTk8wEQYK
+                    KwYBBAGCpnIDHgQDDAEuMB0GCisGAQQBgqZyAwsEDwwNMDUwNDEzODkzNDAwMTARBgorBgEEAYKm
+                    cgMdBAMMAS4wGAYKKwYBBAGCpnIDBAQKDAhHVUVSUkVSTzAaBgorBgEEAYKmcgMIBAwMCjA5ODc3
+                    NzM5MzkwDQYJKoZIhvcNAQELBQADggIBAJwg6ljbARW5XJqnx/0eW6raTKNnVQuLh1FLbCI1wW8N
+                    qf3Dy3JM6PncEzTo0nCS5+fJ9MJ7cQPyYtP0Iy5OgzRQW9WZa/0p+ECazCZmt4QKZkIAvCLme9kH
+                    6OPoX7S7HMopgPk1mh0YU8xqP+Im5rk//X4OxBQeX/IbU5ZeaR40tsCa9t2SKDsd54BT6eqq8wOw
+                    BY6Y7HudfgbZF8xoB2mXFpWud1JKsYoUTEtbvoL2pT61rNGXQZr+C5Ed+GzxSuzfbcmBWCZEzCB1
+                    TYluLiSGKDsXFhpcD4+1/N9fsDV+C8BnROZUbeQPJy19U6yV+attO71T6UO0xii+S4QDF6yK3bf8
+                    roQYDpOYCps09wRHXGVc1V980SCdI5xem6y6qveixFGC8g1/89jUKiAzLMJt6Ob+Vs9dMPIA3wTH
+                    pX+HnMLjWB3QfAOYsu5vxWofnvy/gkGP/z401y1lvFuAxvxnvB86Q36Wz5ZPvP3hecwx4jbrN7Kf
+                    QefGHUTGFVOn11TmLdJlmHmE5quitWI6zomZC/FawOZK5VGE44wg6IjaEbfUYs0yTzIJUUszIcF0
+                    XLePohmLxyX3zRQr8lPGJiOh0s975Qb8DtmnNLMb4c9juffPYZubYRPLwCDbxlzgekLq0VBZU1Lu
+                    3/2Tx3xjBfsEqK5XcyCccB8V8bK/MqwW
+</ds:X509Certificate>
+            </ds:X509Data>
+            <ds:KeyValue>
+                <ds:RSAKeyValue>
+                    <ds:Modulus>
+                        kDUg2ptfqTApyKPzghwI5VfAcyGmBSDd+Abz2pDqVkRGa0+BX6+mIkqEjpISDuLu64bG099z8+5/
+                        pYVXi8zKtXpJ6bMjJEOXCYKVzLtMAos9UlSvZIrP7SXpJ0RqMTBvhbYvkklnEKcXIwJyIMniEuZw
+                        vh5n8gUK7yRWetZ7Ws5NQy3k6gZn/YULssqtJSD/s46nzxSdTPYq4CwW9jxPELYYIbNo4RBTPt2o
+                        0aAvafd/lG3mzfOB0KTMP6l117A5k+ztjS6UkNY7Fr9pjrcHCO8dLKssYMNvDZ2dpuiNwQizin6s
+                        WVyKufXdq0c66JTIdXDQislSF2MI9oVmGokQKQ==
+</ds:Modulus>
+                    <ds:Exponent>
+                        AQAB
+</ds:Exponent>
+                </ds:RSAKeyValue>
+            </ds:KeyValue>
+        </ds:KeyInfo>
+        <ds:Object Id="Signature4592-Object8115">
+            <etsi:QualifyingProperties Target="#Signature4592">
+                <etsi:SignedProperties Id="Signature4592-SignedProperties2528">
+                    <etsi:SignedSignatureProperties>
+                        <etsi:SigningTime>2023-11-19T05:17:01</etsi:SigningTime>
+                        <etsi:SigningCertificate>
+                            <etsi:Cert>
+                                <etsi:CertDigest>
+                                    <ds:DigestMethod
+                                        Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod>
+                                    <ds:DigestValue>ufcIwNQNhsrGgc13kysle5vCRsQ=</ds:DigestValue>
+                                </etsi:CertDigest>
+                                <etsi:IssuerSerial>
+                                    <ds:X509IssuerName>CN=AUTORIDAD DE CERTIFICACION SUBCA-2
+                                        SECURITY DATA, OU=ENTIDAD DE CERTIFICACION DE INFORMACION,
+                                        O=SECURITY DATA S.A. 2, C=EC</ds:X509IssuerName>
+                                    <ds:X509SerialNumber>343422478</ds:X509SerialNumber>
+                                </etsi:IssuerSerial>
+                            </etsi:Cert>
+                        </etsi:SigningCertificate>
+                    </etsi:SignedSignatureProperties>
+                    <etsi:SignedDataObjectProperties>
+                        <etsi:DataObjectFormat ObjectReference="#Reference-ID=2204">
+                            <etsi:Description>contenido comprobante</etsi:Description>
+                            <etsi:MimeType>text/xml</etsi:MimeType>
+                        </etsi:DataObjectFormat>
+                    </etsi:SignedDataObjectProperties>
+                </etsi:SignedProperties>
+            </etsi:QualifyingProperties>
+        </ds:Object>
+    </ds:Signature>
+</factura>
