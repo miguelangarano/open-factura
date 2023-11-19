@@ -9,7 +9,7 @@ export function generateInvoiceXml(invoice: Invoice) {
 }
 
 export function generateInvoice(invoiceData: InvoiceInput) {
-  const keyAccess = generateAccessKey({
+  const accessKey = generateAccessKey({
     date: new Date(invoiceData.infoFactura.fechaEmision),
     codDoc: invoiceData.infoTributaria.codDoc,
     ruc: invoiceData.infoTributaria.ruc,
@@ -25,11 +25,11 @@ export function generateInvoice(invoiceData: InvoiceInput) {
       "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
       "@id": "comprobante",
       "@version": "1.0.0",
-      infoTributaria: { ...invoiceData.infoTributaria, claveAcceso: keyAccess },
+      infoTributaria: { ...invoiceData.infoTributaria, claveAcceso: accessKey },
       infoFactura: invoiceData.infoFactura,
       detalles: invoiceData.detalles,
     },
   };
 
-  return invoice;
+  return { invoice, accessKey };
 }
