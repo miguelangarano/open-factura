@@ -21,18 +21,18 @@ export type RemisionGuideSustitutiveInfo = {
   destinos: Arrivals;
 };
 
-const arrival = {
+const arrival: Arrival = {
   motivoTraslado: "motivoTraslado0",
   docAduaneroUnico: "docAduaneroUnico0",
   codEstabDestino: "000",
   ruta: "ruta0",
 };
 
-const arrivals = {
+const arrivals: Arrivals = {
   destino: [arrival, arrival],
 };
 
-export const remisionGuideSustitutiveInfo = {
+export const remisionGuideSustitutiveInfo: RemisionGuideSustitutiveInfo = {
   dirPartida: "dirPartida0",
   dirDestinatario: "dirDestinatario0",
   fechaIniTransporte: "01/01/2000",

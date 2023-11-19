@@ -1,6 +1,9 @@
 {
   "name": "open-factura",
-  "version": "0.0.1",
+  "version": "0.0.2",
+  "author": {
+    "name": "Miguel Langarano"
+  },
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -13,7 +16,8 @@
   },
   "scripts": {
     "build": "tsup",
-    "start": "tsc ./src/index.ts"
+    "start": "tsc ./src/index.ts",
+    "publish": "npm build & npm link & npm link open-factura & npm publish"
   },
   "devDependencies": {
     "bun-types": "latest",
