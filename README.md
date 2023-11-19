@@ -22,9 +22,14 @@ La librería cuenta actualmente con las siguientes funciones:
 Aquí puedes ver un ejemplo de cómo utilizar las funciones principales:
 
 ```
-import { generateInvoice, generateInvoiceXml, signXml } from "open-factura";
+import {
+  generateInvoice,
+  generateInvoiceXml,
+  getP12FromUrl,
+  signXml,
+} from "open-factura";
 
-const invoice = generateInvoice({
+const { invoice, accessKey }  = generateInvoice({
   infoTributaria: {
     ...
   },
@@ -57,10 +62,20 @@ const invoice = generateInvoice({
 
 const invoiceXml = generateInvoiceXml(invoice);
 
-const sign: ArrayBuffer = new ArrayBuffer(16);
-const password = "pass";
+const signature: ArrayBuffer = await getP12FromUrl("yoururl");
+const password = "yourpassword";
 
 const signedInvoice = await signXml(sign, password, invoiceXml);
+
+const receptionResult = await documentReception(
+  signedInvoice,
+  process.env.SRI_RECEPTION_URL!
+);
+
+const authorizationResult = await documentAuthorization(
+  accessKey,
+  process.env.SRI_AUTHORIZATION_URL!
+);
 ```
 
 Un ejemplo completo lo puedes encontrar en la carpeta `tests`
