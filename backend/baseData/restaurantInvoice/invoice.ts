@@ -52,7 +52,6 @@ export type RestaurantInvoiceInput = {
     | "razonSocial"
     | "nombreComercial"
     | "ruc"
-    | "claveAcceso"
     | "codDoc"
     | "estab"
     | "ptoEmi"

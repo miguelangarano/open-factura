@@ -1,4 +1,8 @@
 export type TaxInfo = {
+  /*
+  pruebas 1
+  produccion 2
+  */
   ambiente: "1" | "2";
   tipoEmision: string;
   razonSocial: string;

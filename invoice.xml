@@ -1,308 +1,93 @@
 <?xml version="1.0"?>
-<factura xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="comprobante" version="version0">
+<factura xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="comprobante" version="1.0.0">
   <infoTributaria>
     <ambiente>1</ambiente>
     <tipoEmision>1</tipoEmision>
-    <razonSocial>razonSocial0</razonSocial>
-    <nombreComercial>nombreComercial0</nombreComercial>
-    <ruc>0000000000001</ruc>
-    <claveAcceso>0000000000000000000000000000000000000000000000000</claveAcceso>
-    <codDoc>00</codDoc>
-    <estab>000</estab>
-    <ptoEmi>000</ptoEmi>
-    <secuencial>000000000</secuencial>
-    <dirMatriz>dirMatriz0</dirMatriz>
-    <agenteRetencion>0</agenteRetencion>
+    <razonSocial>Restaurante Chifa</razonSocial>
+    <nombreComercial>Chifa Hua Wei</nombreComercial>
+    <ruc>0504138934001</ruc>
+    <codDoc>01</codDoc>
+    <estab>001</estab>
+    <ptoEmi>001</ptoEmi>
+    <secuencial>000000001</secuencial>
+    <dirMatriz>Quito</dirMatriz>
     <contribuyenteRimpe>CONTRIBUYENTE RÉGIMEN RIMPE</contribuyenteRimpe>
+    <claveAcceso>Invalid Date0105041389340011001001000000001359802291NaN</claveAcceso>
   </infoTributaria>
   <infoFactura>
-    <fechaEmision>01/01/2000</fechaEmision>
-    <dirEstablecimiento>dirEstablecimiento0</dirEstablecimiento>
-    <contribuyenteEspecial>contribuyente</contribuyenteEspecial>
-    <obligadoContabilidad>SI</obligadoContabilidad>
-    <comercioExterior>EXPORTADOR</comercioExterior>
-    <incoTermFactura>A</incoTermFactura>
-    <lugarIncoTerm>lugarIncoTerm0</lugarIncoTerm>
-    <paisOrigen>000</paisOrigen>
-    <puertoEmbarque>puertoEmbarque0</puertoEmbarque>
-    <puertoDestino>puertoDestino0</puertoDestino>
-    <paisDestino>000</paisDestino>
-    <paisAdquisicion>000</paisAdquisicion>
-    <tipoIdentificacionComprador>04</tipoIdentificacionComprador>
-    <guiaRemision>000-000-000000000</guiaRemision>
-    <razonSocialComprador>razonSocialComprador0</razonSocialComprador>
-    <identificacionComprador>identificacionComprador0</identificacionComprador>
-    <direccionComprador>direccionComprador0</direccionComprador>
-    <totalSinImpuestos>50.00</totalSinImpuestos>
-    <totalSubsidio>50.00</totalSubsidio>
-    <incoTermTotalSinImpuestos>A</incoTermTotalSinImpuestos>
+    <fechaEmision>18/11/2023</fechaEmision>
+    <dirEstablecimiento>Quito</dirEstablecimiento>
+    <obligadoContabilidad>NO</obligadoContabilidad>
+    <tipoIdentificacionComprador>05</tipoIdentificacionComprador>
+    <razonSocialComprador>MIGUEL LANGARANO</razonSocialComprador>
+    <identificacionComprador>0504138934</identificacionComprador>
+    <direccionComprador>Republica del salvador</direccionComprador>
+    <totalSinImpuestos>14.30</totalSinImpuestos>
     <totalDescuento>0.00</totalDescuento>
-    <codDocReembolso>00</codDocReembolso>
-    <totalComprobantesReembolso>50.00</totalComprobantesReembolso>
-    <totalBaseImponibleReembolso>50.00</totalBaseImponibleReembolso>
-    <totalImpuestoReembolso>50.00</totalImpuestoReembolso>
     <totalConImpuestos>
       <totalImpuesto>
         <codigo>2</codigo>
-        <codigoPorcentaje>0</codigoPorcentaje>
+        <codigoPorcentaje>2</codigoPorcentaje>
         <descuentoAdicional>0.00</descuentoAdicional>
-        <baseImponible>50.00</baseImponible>
-        <tarifa>49.50</tarifa>
-        <valor>50.00</valor>
-        <valorDevolucionIva>50.00</valorDevolucionIva>
+        <baseImponible>0.00</baseImponible>
+        <valor>0.00</valor>
       </totalImpuesto>
       <totalImpuesto>
         <codigo>2</codigo>
         <codigoPorcentaje>0</codigoPorcentaje>
         <descuentoAdicional>0.00</descuentoAdicional>
-        <baseImponible>50.00</baseImponible>
-        <tarifa>49.50</tarifa>
-        <valor>50.00</valor>
-        <valorDevolucionIva>50.00</valorDevolucionIva>
+        <baseImponible>14.30</baseImponible>
+        <valor>0.00</valor>
       </totalImpuesto>
     </totalConImpuestos>
-    <compensaciones>
-      <compensacion>
-        <codigo>1</codigo>
-        <tarifa>49.50</tarifa>
-        <valor>50.00</valor>
-      </compensacion>
-      <compensacion>
-        <codigo>1</codigo>
-        <tarifa>49.50</tarifa>
-        <valor>50.00</valor>
-      </compensacion>
-    </compensaciones>
-    <propina>50.00</propina>
-    <fleteInternacional>50.00</fleteInternacional>
-    <seguroInternacional>50.00</seguroInternacional>
-    <gastosAduaneros>50.00</gastosAduaneros>
-    <gastosTransporteOtros>50.00</gastosTransporteOtros>
-    <importeTotal>50.00</importeTotal>
-    <moneda>moneda0</moneda>
-    <placa>placa0</placa>
+    <propina>0.00</propina>
+    <importeTotal>14.30</importeTotal>
+    <moneda>DOLAR</moneda>
     <pagos>
       <pago>
         <formaPago>01</formaPago>
-        <total>50.00</total>
-        <plazo>50.00</plazo>
-        <unidadTiempo>unidadTiempo</unidadTiempo>
-      </pago>
-      <pago>
-        <formaPago>01</formaPago>
-        <total>50.00</total>
-        <plazo>50.00</plazo>
-        <unidadTiempo>unidadTiempo</unidadTiempo>
+        <total>14.30</total>
+        <plazo>0</plazo>
+        <unidadTiempo>dias</unidadTiempo>
       </pago>
     </pagos>
-    <valorRetIva>50.00</valorRetIva>
-    <valorRetRenta>50.00</valorRetRenta>
   </infoFactura>
   <detalles>
     <detalle>
-      <codigoPrincipal>codigoPrincipal0</codigoPrincipal>
-      <codigoAuxiliar>codigoAuxiliar0</codigoAuxiliar>
-      <descripcion>descripcion0</descripcion>
-      <unidadMedida>unidadMedida0</unidadMedida>
-      <cantidad>50.000000</cantidad>
-      <precioUnitario>50.000000</precioUnitario>
-      <precioSinSubsidio>50.000000</precioSinSubsidio>
-      <descuento>50.00</descuento>
-      <precioTotalSinImpuesto>50.00</precioTotalSinImpuesto>
-      <detallesAdicionales>
-        <detAdicional nombre="nombre0" valor="valor0" />
-        <detAdicional nombre="nombre1" valor="valor1" />
-      </detallesAdicionales>
+      <codigoPrincipal>00001</codigoPrincipal>
+      <codigoAuxiliar>00001</codigoAuxiliar>
+      <descripcion>Helado simple</descripcion>
+      <cantidad>1.00</cantidad>
+      <precioUnitario>2.25</precioUnitario>
+      <descuento>0.00</descuento>
+      <precioTotalSinImpuesto>2.25</precioTotalSinImpuesto>
       <impuestos>
         <impuesto>
           <codigo>2</codigo>
           <codigoPorcentaje>0</codigoPorcentaje>
-          <tarifa>49.50</tarifa>
-          <baseImponible>50.00</baseImponible>
-          <valor>50.00</valor>
-        </impuesto>
-        <impuesto>
-          <codigo>2</codigo>
-          <codigoPorcentaje>0</codigoPorcentaje>
-          <tarifa>49.50</tarifa>
-          <baseImponible>50.00</baseImponible>
-          <valor>50.00</valor>
+          <tarifa>0</tarifa>
+          <baseImponible>2.25</baseImponible>
+          <valor>0.00</valor>
         </impuesto>
       </impuestos>
     </detalle>
     <detalle>
-      <codigoPrincipal>codigoPrincipal1</codigoPrincipal>
-      <codigoAuxiliar>codigoAuxiliar1</codigoAuxiliar>
-      <descripcion>descripcion1</descripcion>
-      <unidadMedida>unidadMedida1</unidadMedida>
-      <cantidad>50.000000</cantidad>
-      <precioUnitario>50.000000</precioUnitario>
-      <precioSinSubsidio>50.000000</precioSinSubsidio>
-      <descuento>50.00</descuento>
-      <precioTotalSinImpuesto>50.00</precioTotalSinImpuesto>
-      <detallesAdicionales>
-        <detAdicional nombre="nombre0" valor="valor0" />
-        <detAdicional nombre="nombre1" valor="valor1" />
-      </detallesAdicionales>
+      <codigoPrincipal>00002</codigoPrincipal>
+      <codigoAuxiliar>00002</codigoAuxiliar>
+      <descripcion>Helado doble</descripcion>
+      <cantidad>1.00</cantidad>
+      <precioUnitario>12.05</precioUnitario>
+      <descuento>0.00</descuento>
+      <precioTotalSinImpuesto>12.05</precioTotalSinImpuesto>
       <impuestos>
         <impuesto>
           <codigo>2</codigo>
           <codigoPorcentaje>0</codigoPorcentaje>
-          <tarifa>49.50</tarifa>
-          <baseImponible>50.00</baseImponible>
-          <valor>50.00</valor>
-        </impuesto>
-        <impuesto>
-          <codigo>2</codigo>
-          <codigoPorcentaje>0</codigoPorcentaje>
-          <tarifa>49.50</tarifa>
-          <baseImponible>50.00</baseImponible>
-          <valor>50.00</valor>
+          <tarifa>0</tarifa>
+          <baseImponible>12.05</baseImponible>
+          <valor>0.00</valor>
         </impuesto>
       </impuestos>
     </detalle>
   </detalles>
-  <reembolsos>
-    <reembolsoDetalle>
-      <tipoIdentificacionProveedorReembolso>04</tipoIdentificacionProveedorReembolso>
-      <identificacionProveedorReembolso>identificacionProveedorReembolso0</identificacionProveedorReembolso>
-      <codPaisPagoProveedorReembolso>000</codPaisPagoProveedorReembolso>
-      <tipoProveedorReembolso>01</tipoProveedorReembolso>
-      <codDocReembolso>00</codDocReembolso>
-      <estabDocReembolso>000</estabDocReembolso>
-      <ptoEmiDocReembolso>000</ptoEmiDocReembolso>
-      <secuencialDocReembolso>0000000000</secuencialDocReembolso>
-      <fechaEmisionDocReembolso>01/01/2000</fechaEmisionDocReembolso>
-      <numeroautorizacionDocReemb>0000000000</numeroautorizacionDocReemb>
-      <detalleImpuestos>
-        <detalleImpuesto>
-          <codigo>2</codigo>
-          <codigoPorcentaje>0</codigoPorcentaje>
-          <tarifa>49.50</tarifa>
-          <baseImponibleReembolso>50.00</baseImponibleReembolso>
-          <impuestoReembolso>50.00</impuestoReembolso>
-        </detalleImpuesto>
-        <detalleImpuesto>
-          <codigo>2</codigo>
-          <codigoPorcentaje>0</codigoPorcentaje>
-          <tarifa>49.50</tarifa>
-          <baseImponibleReembolso>50.00</baseImponibleReembolso>
-          <impuestoReembolso>50.00</impuestoReembolso>
-        </detalleImpuesto>
-      </detalleImpuestos>
-      <compensacionesReembolso>
-        <compensacionesReembolso>
-          <codigo>1</codigo>
-          <tarifa>49.50</tarifa>
-          <valor>50.00</valor>
-        </compensacionesReembolso>
-        <compensacionesReembolso>
-          <codigo>1</codigo>
-          <tarifa>49.50</tarifa>
-          <valor>50.00</valor>
-        </compensacionesReembolso>
-      </compensacionesReembolso>
-    </reembolsoDetalle>
-    <reembolsoDetalle>
-      <tipoIdentificacionProveedorReembolso>04</tipoIdentificacionProveedorReembolso>
-      <identificacionProveedorReembolso>identificacionProveedorReembolso0</identificacionProveedorReembolso>
-      <codPaisPagoProveedorReembolso>000</codPaisPagoProveedorReembolso>
-      <tipoProveedorReembolso>01</tipoProveedorReembolso>
-      <codDocReembolso>00</codDocReembolso>
-      <estabDocReembolso>000</estabDocReembolso>
-      <ptoEmiDocReembolso>000</ptoEmiDocReembolso>
-      <secuencialDocReembolso>0000000000</secuencialDocReembolso>
-      <fechaEmisionDocReembolso>01/01/2000</fechaEmisionDocReembolso>
-      <numeroautorizacionDocReemb>0000000000</numeroautorizacionDocReemb>
-      <detalleImpuestos>
-        <detalleImpuesto>
-          <codigo>2</codigo>
-          <codigoPorcentaje>0</codigoPorcentaje>
-          <tarifa>49.50</tarifa>
-          <baseImponibleReembolso>50.00</baseImponibleReembolso>
-          <impuestoReembolso>50.00</impuestoReembolso>
-        </detalleImpuesto>
-        <detalleImpuesto>
-          <codigo>2</codigo>
-          <codigoPorcentaje>0</codigoPorcentaje>
-          <tarifa>49.50</tarifa>
-          <baseImponibleReembolso>50.00</baseImponibleReembolso>
-          <impuestoReembolso>50.00</impuestoReembolso>
-        </detalleImpuesto>
-      </detalleImpuestos>
-      <compensacionesReembolso>
-        <compensacionesReembolso>
-          <codigo>1</codigo>
-          <tarifa>49.50</tarifa>
-          <valor>50.00</valor>
-        </compensacionesReembolso>
-        <compensacionesReembolso>
-          <codigo>1</codigo>
-          <tarifa>49.50</tarifa>
-          <valor>50.00</valor>
-        </compensacionesReembolso>
-      </compensacionesReembolso>
-    </reembolsoDetalle>
-  </reembolsos>
-  <retenciones>
-    <retencion>
-      <codigo>4</codigo>
-      <codigoPorcentaje>0</codigoPorcentaje>
-      <tarifa>49.50</tarifa>
-      <valor>50.00</valor>
-    </retencion>
-    <retencion>
-      <codigo>4</codigo>
-      <codigoPorcentaje>0</codigoPorcentaje>
-      <tarifa>49.50</tarifa>
-      <valor>50.00</valor>
-    </retencion>
-  </retenciones>
-  <infoSustitutivaGuiaRemision>
-    <dirPartida>dirPartida0</dirPartida>
-    <dirDestinatario>dirDestinatario0</dirDestinatario>
-    <fechaIniTransporte>01/01/2000</fechaIniTransporte>
-    <fechaFinTransporte>01/01/2000</fechaFinTransporte>
-    <razonSocialTransportista>razonSocialTransportista0</razonSocialTransportista>
-    <tipoIdentificacionTransportista>04</tipoIdentificacionTransportista>
-    <rucTransportista>rucTransportista0</rucTransportista>
-    <placa>placa1</placa>
-    <destinos>
-      <destino>
-        <motivoTraslado>motivoTraslado0</motivoTraslado>
-        <docAduaneroUnico>docAduaneroUnico0</docAduaneroUnico>
-        <codEstabDestino>000</codEstabDestino>
-        <ruta>ruta0</ruta>
-      </destino>
-      <destino>
-        <motivoTraslado>motivoTraslado0</motivoTraslado>
-        <docAduaneroUnico>docAduaneroUnico0</docAduaneroUnico>
-        <codEstabDestino>000</codEstabDestino>
-        <ruta>ruta0</ruta>
-      </destino>
-    </destinos>
-  </infoSustitutivaGuiaRemision>
-  <otrosRubrosTerceros>
-    <rubro>
-      <concepto>concepto0</concepto>
-      <total>50.00</total>
-    </rubro>
-    <rubro>
-      <concepto>concepto0</concepto>
-      <total>50.00</total>
-    </rubro>
-  </otrosRubrosTerceros>
-  <tipoNegociable>
-    <correo>correo0</correo>
-  </tipoNegociable>
-  <maquinaFiscal>
-    <marca>marca0</marca>
-    <modelo>modelo0</modelo>
-    <serie>serie0</serie>
-  </maquinaFiscal>
-  <infoAdicional>
-    <campoAdicional nombre="nombre4">campoAdicional0</campoAdicional>
-    <campoAdicional nombre="nombre5">campoAdicional1</campoAdicional>
-  </infoAdicional>
 </factura>
