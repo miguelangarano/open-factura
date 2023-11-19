@@ -108,7 +108,11 @@ try {
   });
   const xml = generateInvoiceXml(restaurantInvoice);
   Bun.write("invoice.xml", xml);
-  const signedXML = await signXml("sign.p12", "password", "invoice.xml");
+  const signedXML = await signXml(
+    "sign.p12",
+    process.env.SIGN_PASSWORD!,
+    "invoice.xml"
+  );
   Bun.write("invoice-signed.xml", signedXML);
 } catch (e) {
   console.error(e);
