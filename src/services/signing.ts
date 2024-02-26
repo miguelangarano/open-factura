@@ -161,7 +161,7 @@ export async function signXml(
   );
 
   const nameSpaces =
-    'xmlns:ds="http://www.w3.org/2000/09/xmldisg#" xmlns:etsi="http://uri.etsi.org/01903/v1.3.2#"';
+    'xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:etsi="http://uri.etsi.org/01903/v1.3.2#"';
 
   const certificateNumber = getRandomNumber();
   const signatureNumber = getRandomNumber();
@@ -262,7 +262,7 @@ export async function signXml(
     '\n<ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315">';
   signedInfo += "</ds:CanonicalizationMethod>";
   signedInfo +=
-    '\n<ds:SignatureMethod Algorith="http://www.w3.org/2000/09/xmldsig#rsa-sha1">';
+    '\n<ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1">';
   signedInfo += "</ds:SignatureMethod>";
   signedInfo +=
     '\n<ds:Reference Id="SignedPropertiesID' +
