@@ -21,6 +21,7 @@
   },
   "devDependencies": {
     "bun-types": "latest",
+    "standard": "^17.1.2",
     "ts-node": "^10.9.1",
     "tsup": "^7.3.0",
     "typescript": "^5.2.2"
@@ -36,5 +37,8 @@
     "soap": "^1.0.0",
     "xadesjs": "^2.4.4",
     "xmlbuilder2": "^3.1.1"
+  },
+  "eslintConfig": {
+    "extends": "standard"
   }
 }
