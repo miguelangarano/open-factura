@@ -41,8 +41,8 @@ export type Reimbursements = {
 
 const taxDetail: TaxDetail = {
   codigo: "2",
-  codigoPorcentaje: "0",
-  tarifa: "49.50",
+  codigoPorcentaje: "4",
+  tarifa: "15.00",
   baseImponibleReembolso: "50.00",
   impuestoReembolso: "50.00",
 };
@@ -53,7 +53,7 @@ const taxDetails: TaxDetails = {
 
 const reimbursementCompensation: ReimbursementCompensation = {
   codigo: "1",
-  tarifa: "49.50",
+  tarifa: "15.00",
   valor: "50.00",
 };
 
