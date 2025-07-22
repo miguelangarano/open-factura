@@ -43,19 +43,19 @@
       "totalImpuesto": [
         {
           "codigo": "2",
-          "codigoPorcentaje": "0",
+          "codigoPorcentaje": "4",
           "descuentoAdicional": "0.00",
           "baseImponible": "50.00",
-          "tarifa": "49.50",
+          "tarifa": "15.00",
           "valor": "50.00",
           "valorDevolucionIva": "50.00"
         },
         {
           "codigo": "2",
-          "codigoPorcentaje": "0",
+          "codigoPorcentaje": "4",
           "descuentoAdicional": "0.00",
           "baseImponible": "50.00",
-          "tarifa": "49.50",
+          "tarifa": "15.00",
           "valor": "50.00",
           "valorDevolucionIva": "50.00"
         }
@@ -63,8 +63,8 @@
     },
     "compensaciones": {
       "compensacion": [
-        { "codigo": "1", "tarifa": "49.50", "valor": "50.00" },
-        { "codigo": "1", "tarifa": "49.50", "valor": "50.00" }
+        { "codigo": "1", "tarifa": "15.00", "valor": "50.00" },
+        { "codigo": "1", "tarifa": "15.00", "valor": "50.00" }
       ]
     },
     "propina": "50.00",
@@ -116,15 +116,15 @@
           "impuesto": [
             {
               "codigo": "2",
-              "codigoPorcentaje": "0",
-              "tarifa": "49.50",
+              "codigoPorcentaje": "4",
+              "tarifa": "15.00",
               "baseImponible": "50.00",
               "valor": "50.00"
             },
             {
               "codigo": "2",
-              "codigoPorcentaje": "0",
-              "tarifa": "49.50",
+              "codigoPorcentaje": "4",
+              "tarifa": "15.00",
               "baseImponible": "50.00",
               "valor": "50.00"
             }
@@ -151,15 +151,15 @@
           "impuesto": [
             {
               "codigo": "2",
-              "codigoPorcentaje": "0",
-              "tarifa": "49.50",
+              "codigoPorcentaje": "4",
+              "tarifa": "15.00",
               "baseImponible": "50.00",
               "valor": "50.00"
             },
             {
               "codigo": "2",
-              "codigoPorcentaje": "0",
-              "tarifa": "49.50",
+              "codigoPorcentaje": "4",
+              "tarifa": "15.00",
               "baseImponible": "50.00",
               "valor": "50.00"
             }
