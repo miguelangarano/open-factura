@@ -31,14 +31,18 @@
             <totalImpuesto>
                 <codigo>2</codigo>
                 <codigoPorcentaje>4</codigoPorcentaje>
+                <descuentoAdicional>0.00</descuentoAdicional>
                 <baseImponible>90.00</baseImponible>
                 <valor>13.50</valor>
+                <valorDevolucionIva>0.00</valorDevolucionIva>
             </totalImpuesto>
             <totalImpuesto>
                 <codigo>2</codigo>
                 <codigoPorcentaje>0</codigoPorcentaje>
+                <descuentoAdicional>0.00</descuentoAdicional>
                 <baseImponible>10.00</baseImponible>
                 <valor>0.00</valor>
+                <valorDevolucionIva>0.00</valorDevolucionIva>
             </totalImpuesto>
         </totalConImpuestos>
         <propina>0.00</propina>
@@ -58,11 +62,17 @@
     <detalles>
         <detalle>
             <codigoPrincipal>PROD-001</codigoPrincipal>
+            <codigoAuxiliar>CA-PROD-001</codigoAuxiliar>
             <descripcion>PRODUCTO CON IVA 15%</descripcion>
+            <unidadMedida>UNIDAD</unidadMedida>
             <cantidad>1.00</cantidad>
             <precioUnitario>100.00</precioUnitario>
             <descuento>10.00</descuento>
             <precioTotalSinImpuesto>90.00</precioTotalSinImpuesto>
+            <detallesAdicionales>
+                <detAdicional nombre="Lote" valor="LOTE-XYZ"/>
+                <detAdicional nombre="Serie" valor="SN-12345"/>
+            </detallesAdicionales>
             <impuestos>
                 <impuesto>
                     <codigo>2</codigo>
@@ -75,11 +85,16 @@
         </detalle>
         <detalle>
             <codigoPrincipal>SERV-002</codigoPrincipal>
+            <codigoAuxiliar>CA-SERV-002</codigoAuxiliar>
             <descripcion>SERVICIO CON IVA 0%</descripcion>
+            <unidadMedida>UNIDAD</unidadMedida>
             <cantidad>1.00</cantidad>
             <precioUnitario>10.00</precioUnitario>
             <descuento>0.00</descuento>
             <precioTotalSinImpuesto>10.00</precioTotalSinImpuesto>
+            <detallesAdicionales>
+                <detAdicional nombre="Garantia" valor="12 Meses"/>
+            </detallesAdicionales>
             <impuestos>
                 <impuesto>
                     <codigo>2</codigo>
