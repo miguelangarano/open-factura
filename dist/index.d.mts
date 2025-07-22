@@ -84,7 +84,7 @@ type InvoiceInfo = {
 };
 type TotalWithTax = {
     codigo: "2" | "3" | "5";
-    codigoPorcentaje: "0" | "2" | "3" | "6" | "7" | "8";
+    codigoPorcentaje: "0" | "2" | "3" | "4" | "6" | "7" | "8" | "10";
     descuentoAdicional: string;
     baseImponible: string;
     tarifa?: string;
