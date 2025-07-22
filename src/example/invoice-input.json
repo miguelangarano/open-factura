@@ -27,9 +27,9 @@
         {
           "codigo": "2",
           "codigoPorcentaje": "4",
-          "descuentoAdicional": "0.00",          
+          "descuentoAdicional": "0.00",
           "baseImponible": "90.00",
-          "valor": "13.50"
+          "valor": "13.50",
           "valorDevolucionIva": "0.00"
         },
         {
@@ -37,7 +37,7 @@
           "codigoPorcentaje": "0",
           "descuentoAdicional": "0.00",
           "baseImponible": "10.00",
-          "valor": "0.00"
+          "valor": "0.00",
           "valorDevolucionIva": "0.00"
         }
       ]
@@ -60,18 +60,19 @@
     "detalle": [
       {
         "codigoPrincipal": "PROD-001",
-        "codigoAuxiliar": "codigoAuxiliar1",
+        "codigoAuxiliar": "CA-PROD-001",
         "descripcion": "PRODUCTO CON IVA 15%",
-        "unidadMedida": "unidadMedida1",        
+        "unidadMedida": "UNIDAD",
         "cantidad": "1.00",
         "precioUnitario": "100.00",
         "descuento": "10.00",
         "precioTotalSinImpuesto": "90.00",
         "detallesAdicionales": {
           "detAdicional": [
-            { "@nombre": "nombre0", "@valor": "valor0" },
-            { "@nombre": "nombre1", "@valor": "valor1" }
+            { "@nombre": "Lote", "@valor": "LOTE-XYZ" },
+            { "@nombre": "Serie", "@valor": "SN-12345" }
           ]
+        },
         "impuestos": {
           "impuesto": [
             {
@@ -86,18 +87,18 @@
       },
       {
         "codigoPrincipal": "SERV-002",
-        "codigoAuxiliar": "codigoAuxiliar2",
+        "codigoAuxiliar": "CA-SERV-002",
         "descripcion": "SERVICIO CON IVA 0%",
-        "unidadMedida": "unidadMedida1",        
+        "unidadMedida": "UNIDAD",
         "cantidad": "1.00",
         "precioUnitario": "10.00",
         "descuento": "0.00",
         "precioTotalSinImpuesto": "10.00",
         "detallesAdicionales": {
           "detAdicional": [
-            { "@nombre": "nombre0", "@valor": "valor0" },
-            { "@nombre": "nombre1", "@valor": "valor1" }
+            { "@nombre": "Garantia", "@valor": "12 Meses" }
           ]
+        },
         "impuestos": {
           "impuesto": [
             {
