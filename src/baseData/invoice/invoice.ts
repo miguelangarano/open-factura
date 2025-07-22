@@ -39,7 +39,8 @@ export type Invoice = {
 };
 
 export type InvoiceInput = {
-  infoTributaria: Omit<TaxInfo, "claveAcceso">;
+ // infoTributaria: Omit<TaxInfo, "claveAcceso">;
+  infoTributaria: TaxInfo;
   infoFactura: InvoiceInfo;
   detalles: Details;
   reembolsos?: Reimbursements;
