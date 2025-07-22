@@ -12,7 +12,7 @@ export type Retentions = {
 const retention = {
   codigo: "4",
   codigoPorcentaje: "0",
-  tarifa: "49.50",
+  tarifa: "15.00",
   valor: "50.00",
 };
 

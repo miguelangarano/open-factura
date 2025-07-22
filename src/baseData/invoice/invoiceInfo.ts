@@ -58,13 +58,15 @@ export type TotalWithTax = {
   0% 0
   12% 2
   14% 3
+  15% 4
   No Objeto de Impuesto 6
   Exento de IVA 7
-  IVA diferenciado4 8
+  IVA diferenciado 8
+  13% 10
 
   ICE - Ver tabla 18 de la ficha tecnica de comprobantes electronicos
   */
-  codigoPorcentaje: "0" | "2" | "3" | "6" | "7" | "8";
+  codigoPorcentaje: "0" | "2" | "3" | "4" | "6" | "7" | "8" | "10";
   descuentoAdicional: string;
   baseImponible: string;
   tarifa?: string;
@@ -101,19 +103,19 @@ const totalWithTaxes: TotalWithTaxes = {
   totalImpuesto: [
     {
       codigo: "2",
-      codigoPorcentaje: "0",
+      codigoPorcentaje: "4",
       descuentoAdicional: "0.00",
       baseImponible: "50.00",
-      tarifa: "49.50",
+      tarifa: "15.00",
       valor: "50.00",
       valorDevolucionIva: "50.00",
     },
     {
       codigo: "2",
-      codigoPorcentaje: "0",
+      codigoPorcentaje: "4",
       descuentoAdicional: "0.00",
       baseImponible: "50.00",
-      tarifa: "49.50",
+      tarifa: "15.00",
       valor: "50.00",
       valorDevolucionIva: "50.00",
     },
@@ -124,12 +126,12 @@ const compensations: Compensations = {
   compensacion: [
     {
       codigo: "1",
-      tarifa: "49.50",
+      tarifa: "15.00",
       valor: "50.00",
     },
     {
       codigo: "1",
-      tarifa: "49.50",
+      tarifa: "15.00",
       valor: "50.00",
     },
   ],

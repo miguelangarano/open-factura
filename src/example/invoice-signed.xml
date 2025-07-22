@@ -1,198 +1,148 @@
-<?xml version="1.0"?>
-<factura xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="comprobante" version="1.0.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<factura xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="comprobante" version="1.0.0">
+    <!-- Sección con la información tributaria del emisor -->
     <infoTributaria>
         <ambiente>1</ambiente>
         <tipoEmision>1</tipoEmision>
-        <razonSocial>razonSocial0</razonSocial>
-        <nombreComercial>nombreComercial0</nombreComercial>
-        <ruc>0000000000001</ruc>
+        <razonSocial>NOMBRE O RAZON SOCIAL DEL EMISOR</razonSocial>
+        <nombreComercial>NOMBRE COMERCIAL DEL EMISOR (OPCIONAL)</nombreComercial>
+        <ruc>1790000000001</ruc>
+        <claveAcceso>2207202401179000000000110010010000001231234567819</claveAcceso>
         <codDoc>01</codDoc>
-        <estab>000</estab>
-        <ptoEmi>000</ptoEmi>
-        <secuencial>000000000</secuencial>
-        <dirMatriz>dirMatriz0</dirMatriz>
-        <agenteRetencion>0</agenteRetencion>
-        <contribuyenteRimpe>CONTRIBUYENTE RÉGIMEN RIMPE</contribuyenteRimpe>
-        <claveAcceso>Sat Jan 01 2000 00:00:00 GMT-0500 (Ecuador
-            Time)0100000000000011000000000000000777610221NaN</claveAcceso>
+        <estab>001</estab>
+        <ptoEmi>001</ptoEmi>
+        <secuencial>000000123</secuencial>
+        <dirMatriz>DIRECCION DE LA MATRIZ DEL EMISOR</dirMatriz>
     </infoTributaria>
+    <!-- Sección con la información propia de la factura -->
     <infoFactura>
-        <fechaEmision>01/01/2000</fechaEmision>
-        <dirEstablecimiento>dirEstablecimiento0</dirEstablecimiento>
-        <contribuyenteEspecial>contribuyente</contribuyenteEspecial>
+        <fechaEmision>22/07/2024</fechaEmision>
+        <dirEstablecimiento>DIRECCION DEL ESTABLECIMIENTO DONDE SE EMITE</dirEstablecimiento>
+        <contribuyenteEspecial>12345</contribuyenteEspecial>
         <obligadoContabilidad>SI</obligadoContabilidad>
-        <comercioExterior>EXPORTADOR</comercioExterior>
-        <incoTermFactura>A</incoTermFactura>
-        <lugarIncoTerm>lugarIncoTerm0</lugarIncoTerm>
-        <paisOrigen>000</paisOrigen>
-        <puertoEmbarque>puertoEmbarque0</puertoEmbarque>
-        <puertoDestino>puertoDestino0</puertoDestino>
-        <paisDestino>000</paisDestino>
-        <paisAdquisicion>000</paisAdquisicion>
-        <tipoIdentificacionComprador>04</tipoIdentificacionComprador>
-        <guiaRemision>000-000-000000000</guiaRemision>
-        <razonSocialComprador>razonSocialComprador0</razonSocialComprador>
-        <identificacionComprador>identificacionComprador0</identificacionComprador>
-        <direccionComprador>direccionComprador0</direccionComprador>
-        <totalSinImpuestos>50.00</totalSinImpuestos>
-        <totalSubsidio>50.00</totalSubsidio>
-        <incoTermTotalSinImpuestos>A</incoTermTotalSinImpuestos>
-        <totalDescuento>0.00</totalDescuento>
-        <codDocReembolso>00</codDocReembolso>
-        <totalComprobantesReembolso>50.00</totalComprobantesReembolso>
-        <totalBaseImponibleReembolso>50.00</totalBaseImponibleReembolso>
-        <totalImpuestoReembolso>50.00</totalImpuestoReembolso>
+        <tipoIdentificacionComprador>05</tipoIdentificacionComprador>
+        <razonSocialComprador>NOMBRE O RAZON SOCIAL DEL COMPRADOR</razonSocialComprador>
+        <identificacionComprador>1720000000</identificacionComprador>
+        <direccionComprador>DIRECCION DEL COMPRADOR (OPCIONAL)</direccionComprador>
+        <totalSinImpuestos>100.00</totalSinImpuestos>
+        <totalDescuento>10.00</totalDescuento>
+        <!-- Detalle de los impuestos totales -->
         <totalConImpuestos>
             <totalImpuesto>
                 <codigo>2</codigo>
-                <codigoPorcentaje>0</codigoPorcentaje>
+                <codigoPorcentaje>4</codigoPorcentaje>
                 <descuentoAdicional>0.00</descuentoAdicional>
-                <baseImponible>50.00</baseImponible>
-                <tarifa>49.50</tarifa>
-                <valor>50.00</valor>
-                <valorDevolucionIva>50.00</valorDevolucionIva>
+                <baseImponible>90.00</baseImponible>
+                <valor>13.50</valor>
+                <valorDevolucionIva>0.00</valorDevolucionIva>
             </totalImpuesto>
             <totalImpuesto>
                 <codigo>2</codigo>
                 <codigoPorcentaje>0</codigoPorcentaje>
                 <descuentoAdicional>0.00</descuentoAdicional>
-                <baseImponible>50.00</baseImponible>
-                <tarifa>49.50</tarifa>
-                <valor>50.00</valor>
-                <valorDevolucionIva>50.00</valorDevolucionIva>
+                <baseImponible>10.00</baseImponible>
+                <valor>0.00</valor>
+                <valorDevolucionIva>0.00</valorDevolucionIva>
             </totalImpuesto>
         </totalConImpuestos>
-        <compensaciones>
-            <compensacion>
-                <codigo>1</codigo>
-                <tarifa>49.50</tarifa>
-                <valor>50.00</valor>
-            </compensacion>
-            <compensacion>
-                <codigo>1</codigo>
-                <tarifa>49.50</tarifa>
-                <valor>50.00</valor>
-            </compensacion>
-        </compensaciones>
-        <propina>50.00</propina>
-        <fleteInternacional>50.00</fleteInternacional>
-        <seguroInternacional>50.00</seguroInternacional>
-        <gastosAduaneros>50.00</gastosAduaneros>
-        <gastosTransporteOtros>50.00</gastosTransporteOtros>
-        <importeTotal>50.00</importeTotal>
-        <moneda>moneda0</moneda>
-        <placa>placa0</placa>
+        <propina>0.00</propina>
+        <importeTotal>113.50</importeTotal>
+        <moneda>DOLAR</moneda>
+        <!-- Formas de pago -->
         <pagos>
             <pago>
                 <formaPago>01</formaPago>
-                <total>50.00</total>
-                <plazo>50.00</plazo>
-                <unidadTiempo>unidadTiempo</unidadTiempo>
-            </pago>
-            <pago>
-                <formaPago>01</formaPago>
-                <total>50.00</total>
-                <plazo>50.00</plazo>
-                <unidadTiempo>unidadTiempo</unidadTiempo>
+                <total>113.50</total>
+                <plazo>0</plazo>
+                <unidadTiempo>dias</unidadTiempo>
             </pago>
         </pagos>
-        <valorRetIva>50.00</valorRetIva>
-        <valorRetRenta>50.00</valorRetRenta>
     </infoFactura>
+    <!-- Sección con el detalle de los productos/servicios facturados -->
     <detalles>
         <detalle>
-            <codigoPrincipal>codigoPrincipal0</codigoPrincipal>
-            <codigoAuxiliar>codigoAuxiliar0</codigoAuxiliar>
-            <descripcion>descripcion0</descripcion>
-            <unidadMedida>unidadMedida0</unidadMedida>
-            <cantidad>50.000000</cantidad>
-            <precioUnitario>50.000000</precioUnitario>
-            <precioSinSubsidio>50.000000</precioSinSubsidio>
-            <descuento>50.00</descuento>
-            <precioTotalSinImpuesto>50.00</precioTotalSinImpuesto>
+            <codigoPrincipal>PROD-001</codigoPrincipal>
+            <codigoAuxiliar>CA-PROD-001</codigoAuxiliar>
+            <descripcion>PRODUCTO CON IVA 15%</descripcion>
+            <unidadMedida>UNIDAD</unidadMedida>
+            <cantidad>1.00</cantidad>
+            <precioUnitario>100.00</precioUnitario>
+            <descuento>10.00</descuento>
+            <precioTotalSinImpuesto>90.00</precioTotalSinImpuesto>
             <detallesAdicionales>
-                <detAdicional nombre="nombre0" valor="valor0" />
-                <detAdicional nombre="nombre1" valor="valor1" />
+                <detAdicional nombre="Lote" valor="LOTE-XYZ"/>
+                <detAdicional nombre="Serie" valor="SN-12345"/>
             </detallesAdicionales>
             <impuestos>
                 <impuesto>
                     <codigo>2</codigo>
-                    <codigoPorcentaje>0</codigoPorcentaje>
-                    <tarifa>49.50</tarifa>
-                    <baseImponible>50.00</baseImponible>
-                    <valor>50.00</valor>
-                </impuesto>
-                <impuesto>
-                    <codigo>2</codigo>
-                    <codigoPorcentaje>0</codigoPorcentaje>
-                    <tarifa>49.50</tarifa>
-                    <baseImponible>50.00</baseImponible>
-                    <valor>50.00</valor>
+                    <codigoPorcentaje>4</codigoPorcentaje>
+                    <tarifa>15.00</tarifa>
+                    <baseImponible>90.00</baseImponible>
+                    <valor>13.50</valor>
                 </impuesto>
             </impuestos>
         </detalle>
         <detalle>
-            <codigoPrincipal>codigoPrincipal1</codigoPrincipal>
-            <codigoAuxiliar>codigoAuxiliar1</codigoAuxiliar>
-            <descripcion>descripcion1</descripcion>
-            <unidadMedida>unidadMedida1</unidadMedida>
-            <cantidad>50.000000</cantidad>
-            <precioUnitario>50.000000</precioUnitario>
-            <precioSinSubsidio>50.000000</precioSinSubsidio>
-            <descuento>50.00</descuento>
-            <precioTotalSinImpuesto>50.00</precioTotalSinImpuesto>
+            <codigoPrincipal>SERV-002</codigoPrincipal>
+            <codigoAuxiliar>CA-SERV-002</codigoAuxiliar>
+            <descripcion>SERVICIO CON IVA 0%</descripcion>
+            <unidadMedida>UNIDAD</unidadMedida>
+            <cantidad>1.00</cantidad>
+            <precioUnitario>10.00</precioUnitario>
+            <descuento>0.00</descuento>
+            <precioTotalSinImpuesto>10.00</precioTotalSinImpuesto>
             <detallesAdicionales>
-                <detAdicional nombre="nombre0" valor="valor0" />
-                <detAdicional nombre="nombre1" valor="valor1" />
+                <detAdicional nombre="Garantia" valor="12 Meses"/>
             </detallesAdicionales>
             <impuestos>
                 <impuesto>
                     <codigo>2</codigo>
                     <codigoPorcentaje>0</codigoPorcentaje>
-                    <tarifa>49.50</tarifa>
-                    <baseImponible>50.00</baseImponible>
-                    <valor>50.00</valor>
-                </impuesto>
-                <impuesto>
-                    <codigo>2</codigo>
-                    <codigoPorcentaje>0</codigoPorcentaje>
-                    <tarifa>49.50</tarifa>
-                    <baseImponible>50.00</baseImponible>
-                    <valor>50.00</valor>
+                    <tarifa>0.00</tarifa>
+                    <baseImponible>10.00</baseImponible>
+                    <valor>0.00</valor>
                 </impuesto>
             </impuestos>
         </detalle>
     </detalles>
-    <ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldisg#"
-        xmlns:etsi="http://uri.etsi.org/01903/v1.3.2#" Id="Signature4592">
-        <ds:SignedInfo Id="Signature-SignedInfo3432">
-            <ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"></ds:CanonicalizationMethod>
-            <ds:SignatureMethod Algorith="http://www.w3.org/2000/09/xmldsig#rsa-sha1"></ds:SignatureMethod>
-            <ds:Reference Id="SignedPropertiesID6943"
-                Type="http://uri.etsi.org/01903#SignedProperties"
-                URI="#Signature4592-SignedProperties2528">
-                <ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod>
+    <!-- Sección para información adicional, como email o teléfono -->
+    <infoAdicional>
+        <campoAdicional nombre="Email">cliente@email.com</campoAdicional>
+        <campoAdicional nombre="Telefono">0991234567</campoAdicional>
+    </infoAdicional>
+    <!-- INICIO DE LA FIRMA DIGITAL - ¡¡¡ATENCIÓN!!! ESTA ES UNA PLANTILLA. DEBE REGENERAR LA FIRMA CON SU SOFTWARE. -->
+    <ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:etsi="http://uri.etsi.org/01903/v1.3.2#" Id="Signature_001">
+        <ds:SignedInfo>
+            <ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+            <ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+            <ds:Reference Id="Reference_Properties_001" Type="http://uri.etsi.org/01903#SignedProperties" URI="#Signature_001_SignedProperties_001">
+                <ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+                <!-- VALOR DIGEST DEBE SER RECALCULADO -->
                 <ds:DigestValue>zfyjLog+VD58wdfb12zDfeqEqRU=</ds:DigestValue>
             </ds:Reference>
-            <ds:Reference URI="#Certificate9575">
-                <ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod>
+            <ds:Reference URI="#Certificate_001">
+                <ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+                <!-- VALOR DIGEST DEBE SER RECALCULADO -->
                 <ds:DigestValue>XrCTESKuFJDnGG7G/kIBNcB+CyI=</ds:DigestValue>
             </ds:Reference>
-            <ds:Reference Id="Reference-ID2204" URI="#comprobante">
+            <ds:Reference Id="Reference_Comprobante_001" URI="#comprobante">
                 <ds:Transforms>
-                    <ds:Transform Algorithm="http://www.w3.org/2000/09/xmlndsig#enveloped-signature"></ds:Transform>
+                    <ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
                 </ds:Transforms>
-                <ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod>
+                <ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+                <!-- VALOR DIGEST DEBE SER RECALCULADO -->
                 <ds:DigestValue>R6hjQUG8FlRbdLi+I2uoyFDG4bk=</ds:DigestValue>
             </ds:Reference>
         </ds:SignedInfo>
-        <ds:SignatureValue Id="SignatureValue4461">
+        <!-- EL VALOR DE LA FIRMA DEBE SER REGENERADO POR SU SISTEMA -->
+        <ds:SignatureValue>
             O2FR6IuTBWGsOBJVsmsrT4QEjUYW8aqOtePwllcMAd6iHBuPxuM1Nc+uyqgYRuocf441DwF8l3Wxhhrp5MMr/WBcjvELWkQiegeUJQqEB/smL/UYFYOsb4r4l3soALo+qpNmZ2G3dzlOOSRX8dz3TCKayqnApzg39eGhY0fgqIL5v+2775jdhbdmywPTcF5aP17tjXxljjt1CiuXeffWcNOgpe16GvxnmYVSs6wtorjXgGPANG3y0mFD+kxw5yl3OvIuTgZrx/PZZhjYNCoMoHrcui/VR0bFOUK+smkp2jaPyolLqs4KMZZbnuMx8WKnSThinHmffX4KoTjOgkA5SevTQg==
-</ds:SignatureValue>
-        <ds:KeyInfo Id="Certificate9575">
+        </ds:SignatureValue>
+        <ds:KeyInfo Id="Certificate_001">
             <ds:X509Data>
-                <ds:X509Certificate>
+                <!-- SU CERTIFICADO DIGITAL DEBE IR AQUÍ EN FORMATO BASE64 -->
+                <ds:X509Certificate>                    
                     MIIL4TCCCcmgAwIBAgIEFHg2DjANBgkqhkiG9w0BAQsFADCBmTELMAkGA1UEBhMCRUMxHTAbBgNV
                     BAoMFFNFQ1VSSVRZIERBVEEgUy5BLiAyMTAwLgYDVQQLDCdFTlRJREFEIERFIENFUlRJRklDQUNJ
                     T04gREUgSU5GT1JNQUNJT04xOTA3BgNVBAMMMEFVVE9SSURBRCBERSBDRVJUSUZJQ0FDSU9OIFNV
@@ -247,46 +197,44 @@
                     QefGHUTGFVOn11TmLdJlmHmE5quitWI6zomZC/FawOZK5VGE44wg6IjaEbfUYs0yTzIJUUszIcF0
                     XLePohmLxyX3zRQr8lPGJiOh0s975Qb8DtmnNLMb4c9juffPYZubYRPLwCDbxlzgekLq0VBZU1Lu
                     3/2Tx3xjBfsEqK5XcyCccB8V8bK/MqwW
-</ds:X509Certificate>
+                </ds:X509Certificate>
             </ds:X509Data>
             <ds:KeyValue>
                 <ds:RSAKeyValue>
+                    <!-- EL MÓDULO DE SU CLAVE PÚBLICA DEBE IR AQUÍ -->
                     <ds:Modulus>
                         kDUg2ptfqTApyKPzghwI5VfAcyGmBSDd+Abz2pDqVkRGa0+BX6+mIkqEjpISDuLu64bG099z8+5/
                         pYVXi8zKtXpJ6bMjJEOXCYKVzLtMAos9UlSvZIrP7SXpJ0RqMTBvhbYvkklnEKcXIwJyIMniEuZw
                         vh5n8gUK7yRWetZ7Ws5NQy3k6gZn/YULssqtJSD/s46nzxSdTPYq4CwW9jxPELYYIbNo4RBTPt2o
                         0aAvafd/lG3mzfOB0KTMP6l117A5k+ztjS6UkNY7Fr9pjrcHCO8dLKssYMNvDZ2dpuiNwQizin6s
                         WVyKufXdq0c66JTIdXDQislSF2MI9oVmGokQKQ==
-</ds:Modulus>
-                    <ds:Exponent>
-                        AQAB
-</ds:Exponent>
+                    </ds:Modulus>
+                    <ds:Exponent>AQAB</ds:Exponent>
                 </ds:RSAKeyValue>
             </ds:KeyValue>
         </ds:KeyInfo>
-        <ds:Object Id="Signature4592-Object8115">
-            <etsi:QualifyingProperties Target="#Signature4592">
-                <etsi:SignedProperties Id="Signature4592-SignedProperties2528">
+        <ds:Object>
+            <etsi:QualifyingProperties Target="#Signature_001">
+                <etsi:SignedProperties Id="Signature_001_SignedProperties_001">
                     <etsi:SignedSignatureProperties>
-                        <etsi:SigningTime>2023-11-19T05:17:01</etsi:SigningTime>
+                        <etsi:SigningTime>2025-07-22T09:00:00-05:00</etsi:SigningTime>
                         <etsi:SigningCertificate>
                             <etsi:Cert>
                                 <etsi:CertDigest>
-                                    <ds:DigestMethod
-                                        Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod>
+                                    <ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+                                    <!-- VALOR DIGEST DEBE SER RECALCULADO -->
                                     <ds:DigestValue>ufcIwNQNhsrGgc13kysle5vCRsQ=</ds:DigestValue>
                                 </etsi:CertDigest>
                                 <etsi:IssuerSerial>
-                                    <ds:X509IssuerName>CN=AUTORIDAD DE CERTIFICACION SUBCA-2
-                                        SECURITY DATA, OU=ENTIDAD DE CERTIFICACION DE INFORMACION,
-                                        O=SECURITY DATA S.A. 2, C=EC</ds:X509IssuerName>
+                                    <!-- LOS DATOS DEL EMISOR DE SU CERTIFICADO DEBEN IR AQUÍ -->
+                                    <ds:X509IssuerName>CN=AUTORIDAD DE CERTIFICACION..., O=SECURITY DATA S.A. 2, C=EC</ds:X509IssuerName>
                                     <ds:X509SerialNumber>343422478</ds:X509SerialNumber>
                                 </etsi:IssuerSerial>
                             </etsi:Cert>
                         </etsi:SigningCertificate>
                     </etsi:SignedSignatureProperties>
                     <etsi:SignedDataObjectProperties>
-                        <etsi:DataObjectFormat ObjectReference="#Reference-ID=2204">
+                        <etsi:DataObjectFormat ObjectReference="#Reference_Comprobante_001">
                             <etsi:Description>contenido comprobante</etsi:Description>
                             <etsi:MimeType>text/xml</etsi:MimeType>
                         </etsi:DataObjectFormat>

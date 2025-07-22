@@ -54,15 +54,15 @@ const taxes: Taxes = {
   impuesto: [
     {
       codigo: "2",
-      codigoPorcentaje: "0",
-      tarifa: "49.50",
+      codigoPorcentaje: "4",
+      tarifa: "15.00",
       baseImponible: "50.00",
       valor: "50.00",
     },
     {
       codigo: "2",
-      codigoPorcentaje: "0",
-      tarifa: "49.50",
+      codigoPorcentaje: "4",
+      tarifa: "15.00",
       baseImponible: "50.00",
       valor: "50.00",
     },
