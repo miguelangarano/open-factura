@@ -5,7 +5,6 @@
     "razonSocial": "NOMBRE O RAZON SOCIAL DEL EMISOR",
     "nombreComercial": "NOMBRE COMERCIAL DEL EMISOR (OPCIONAL)",
     "ruc": "1790000000001",
-    "claveAcceso": "2207202401179000000000110010010000001231234567819",
     "codDoc": "01",
     "estab": "001",
     "ptoEmi": "001",
@@ -98,12 +97,12 @@
   "infoAdicional": {
     "campoAdicional": [
       {
-        "@nombre": "Email",
-        "@valor": "cliente@email.com"
+        "nombre": "Email",
+        "valor": "cliente@email.com"
       },
       {
-        "@nombre": "Telefono",
-        "@valor": "0991234567"
+        "nombre": "Telefono",
+        "valor": "0991234567"
       }
     ]
   }
