@@ -1,6 +1,5 @@
 import { create } from "xmlbuilder2";
 import { Invoice, InvoiceInput } from "../baseData/invoice/invoice";
-import { generateAccessKey } from "../utils/utils";
 
 export function generateInvoiceXml(invoice: Invoice) {
   const document = create(invoice);
@@ -9,15 +8,8 @@ export function generateInvoiceXml(invoice: Invoice) {
 }
 
 export function generateInvoice(invoiceData: InvoiceInput) {
-  const accessKey = generateAccessKey({
-    date: new Date(invoiceData.infoFactura.fechaEmision),
-    codDoc: invoiceData.infoTributaria.codDoc,
-    ruc: invoiceData.infoTributaria.ruc,
-    environment: invoiceData.infoTributaria.ambiente,
-    establishment: invoiceData.infoTributaria.estab,
-    emissionPoint: invoiceData.infoTributaria.ptoEmi,
-    sequential: invoiceData.infoTributaria.secuencial,
-  });
+  // Extraemos el código de acceso desde infoTributaria
+  const accessKey = invoiceData.infoTributaria.claveAcceso;
 
   const invoice: Invoice = {
     factura: {
@@ -25,11 +17,11 @@ export function generateInvoice(invoiceData: InvoiceInput) {
       "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
       "@id": "comprobante",
       "@version": "1.0.0",
-      infoTributaria: { ...invoiceData.infoTributaria, claveAcceso: accessKey },
+      infoTributaria: invoiceData.infoTributaria, // Se usa tal cual viene
       infoFactura: invoiceData.infoFactura,
       detalles: invoiceData.detalles,
     },
   };
 
-  return { invoice, accessKey };
+  return { invoice, accessKey }; // Retornamos la factura y el accessKey
 }
