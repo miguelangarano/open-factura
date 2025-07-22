@@ -46,19 +46,19 @@
         <totalConImpuestos>
             <totalImpuesto>
                 <codigo>2</codigo>
-                <codigoPorcentaje>0</codigoPorcentaje>
+                <codigoPorcentaje>4</codigoPorcentaje>
                 <descuentoAdicional>0.00</descuentoAdicional>
                 <baseImponible>50.00</baseImponible>
-                <tarifa>49.50</tarifa>
+                <tarifa>15.00</tarifa>
                 <valor>50.00</valor>
                 <valorDevolucionIva>50.00</valorDevolucionIva>
             </totalImpuesto>
             <totalImpuesto>
                 <codigo>2</codigo>
-                <codigoPorcentaje>0</codigoPorcentaje>
+                <codigoPorcentaje>4</codigoPorcentaje>
                 <descuentoAdicional>0.00</descuentoAdicional>
                 <baseImponible>50.00</baseImponible>
-                <tarifa>49.50</tarifa>
+                <tarifa>15.00</tarifa>
                 <valor>50.00</valor>
                 <valorDevolucionIva>50.00</valorDevolucionIva>
             </totalImpuesto>
@@ -66,12 +66,12 @@
         <compensaciones>
             <compensacion>
                 <codigo>1</codigo>
-                <tarifa>49.50</tarifa>
+                <tarifa>15.00</tarifa>
                 <valor>50.00</valor>
             </compensacion>
             <compensacion>
                 <codigo>1</codigo>
-                <tarifa>49.50</tarifa>
+                <tarifa>15.00</tarifa>
                 <valor>50.00</valor>
             </compensacion>
         </compensaciones>
@@ -118,15 +118,15 @@
             <impuestos>
                 <impuesto>
                     <codigo>2</codigo>
-                    <codigoPorcentaje>0</codigoPorcentaje>
-                    <tarifa>49.50</tarifa>
+                    <codigoPorcentaje>4</codigoPorcentaje>
+                    <tarifa>15.00</tarifa>
                     <baseImponible>50.00</baseImponible>
                     <valor>50.00</valor>
                 </impuesto>
                 <impuesto>
                     <codigo>2</codigo>
-                    <codigoPorcentaje>0</codigoPorcentaje>
-                    <tarifa>49.50</tarifa>
+                    <codigoPorcentaje>4</codigoPorcentaje>
+                    <tarifa>15.00</tarifa>
                     <baseImponible>50.00</baseImponible>
                     <valor>50.00</valor>
                 </impuesto>
@@ -149,15 +149,15 @@
             <impuestos>
                 <impuesto>
                     <codigo>2</codigo>
-                    <codigoPorcentaje>0</codigoPorcentaje>
-                    <tarifa>49.50</tarifa>
+                    <codigoPorcentaje>4</codigoPorcentaje>
+                    <tarifa>15.00</tarifa>
                     <baseImponible>50.00</baseImponible>
                     <valor>50.00</valor>
                 </impuesto>
                 <impuesto>
                     <codigo>2</codigo>
-                    <codigoPorcentaje>0</codigoPorcentaje>
-                    <tarifa>49.50</tarifa>
+                    <codigoPorcentaje>4</codigoPorcentaje>
+                    <tarifa>15.00</tarifa>
                     <baseImponible>50.00</baseImponible>
                     <valor>50.00</valor>
                 </impuesto>
